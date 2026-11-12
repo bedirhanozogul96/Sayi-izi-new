@@ -156,6 +156,15 @@ select option{background:var(--cell);color:var(--label)}
 .login-box .btn{margin-top:22px}
 .login-hint{color:var(--label2);font-size:13px;line-height:1.45;text-align:center;margin:10px 4px 0}
 .demo-pill{font-size:13px;font-weight:700;color:var(--orange);background:var(--cell);border:1.5px solid var(--border);border-radius:999px;padding:5px 12px;box-shadow:var(--card-shadow);white-space:nowrap}
+.trial-card{margin-top:18px;padding:16px 16px 14px;border-radius:16px;border:2px solid var(--blue);background:var(--cell2);box-shadow:0 6px 18px rgba(0,122,255,.14);text-align:left}
+.trial-card .tc-title{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
+.trial-card .tc-title .i{width:17px;height:17px}
+.trial-card p{margin:0;font-size:15px;line-height:1.5;color:var(--label)}
+.trial-card .tc-code{display:inline-block;font-weight:800;font-size:16px;letter-spacing:1.5px;color:#fff;background:var(--blue);border-radius:8px;padding:1px 9px}
+.trial-card .tc-mail{margin-top:12px;width:100%;display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:12px;border:1.5px solid var(--border);background:var(--cell);color:var(--label);font:inherit;font-size:15px;font-weight:600;text-align:left;cursor:pointer}
+.trial-card .tc-mail:hover{border-color:var(--blue)}
+.trial-card .tc-ico{flex:none;width:36px;height:36px;border-radius:10px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center}
+.trial-card .tc-ico .i{width:20px;height:20px}
 .login-err{color:var(--red);font-size:13px;text-align:center;min-height:18px;margin:10px 0 0}
 .corner{position:fixed;top:max(14px,env(safe-area-inset-top));right:18px;z-index:50;background:var(--cell);border:1.5px solid var(--border);border-radius:10px;padding:6px 12px;box-shadow:var(--card-shadow)}
 
@@ -491,6 +500,7 @@ select option{background:var(--cell);color:var(--label)}
   <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M15 5l4 4L8 20H4v-4z"/></symbol>
   <symbol id="i-speaker" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
   <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M4 8l8 5.5L20 8"/></symbol>
   <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
 </svg>
 
@@ -589,6 +599,16 @@ select option{background:var(--cell);color:var(--label)}
     <p class="login-hint">Öğrenci ve öğretmenler yalnızca kendilerine verilen <b>6 haneli kodu</b> yazar; ad sorulmaz. Yönetici, şifresini aynı alana girer.</p>
     <button class="btn block" id="loginBtn" onclick="login()">Giriş Yap</button>
     <p class="login-err" id="loginMsg"></p>
+
+    <!-- Deneme sürümü ve kod talebi bilgi kartı -->
+    <div class="trial-card" id="trialCard">
+      <div class="tc-title"><svg class="i"><use href="#i-spark"/></svg>Deneme Sürümü</div>
+      <p>Kod kısmına <span class="tc-code">1923</span> yazarsanız deneme sürümünü görebilirsiniz. Öğrenci-Öğretmen çifti olarak çalışma yapabilmek için bana mail gönderebilirsiniz.</p>
+      <button type="button" class="tc-mail" onclick="requestPairCode()">
+        <span class="tc-ico" aria-hidden="true"><svg class="i"><use href="#i-mail"/></svg></span>
+        <span>Öğretmen-Öğrenci çifti için talepte bulun</span>
+      </button>
+    </div>
 
     <!-- YÖNETİCİ PANELİ -->
     <div id="adminPanel" class="hidden" style="margin-top:24px">
@@ -818,7 +838,7 @@ select option{background:var(--cell);color:var(--label)}
   <div class="rotate-hint"><svg class="i"><use href="#i-rotate"/></svg>Daha rahat çalışmak için cihazı yatay çevirin</div>
   <div class="s-top">
     <button class="plain s-exit" onclick="requestExitStudent()"><svg class="i" style="width:18px;height:18px"><use href="#i-exit"/></svg>Çıkış</button>
-    <div class="demo-pill hidden" id="demoPill">Deneme Sürümü · 1905</div>
+    <div class="demo-pill hidden" id="demoPill">Deneme Sürümü · 1923</div>
     <div class="timer hidden" id="timer"></div>
   </div>
 
@@ -1135,7 +1155,7 @@ function loadLocalSession(kod) {
 /* ============================================================
    GİRİŞ VE YÖNETİCİ İZLEME
    ============================================================ */
-const TRIAL_CODE = "1905";
+const TRIAL_CODE = "1923";
 let teacherName = "";
 let teacherCode = "";
 let adminPassMemory = "";
@@ -1284,7 +1304,7 @@ async function login() {
   const kod = ($("#inCode").value || "").trim();
   if (!kod) { msg.innerText = "Lütfen erişim kodunuzu girin."; return; }
 
-  // 1) 1905 → rastgele toplama ve çıkarma işlemlerinden oluşan deneme oturumu
+  // 1) 1923 → rastgele toplama ve çıkarma işlemlerinden oluşan deneme oturumu
   if (kod === TRIAL_CODE) { startTrialSession(); return; }
 
   // 2) 6 haneli kod → öğrenci oturumu ya da öğretmen paneli (ad sorulmaz)
@@ -1343,7 +1363,16 @@ async function openTeacherWorkspace(n, tKod) {
   enterTeacherWorkspace(t, tKod);
 }
 
-/* ---------- 1905 deneme sürümü ---------- */
+/* ---------- kod talebi: hazır metinle e-posta taslağı açar ---------- */
+function requestPairCode() {
+  // Adres, istenmeyen posta toplayıcılarına karşı iki parça tutulur.
+  const adres = ["bedirhan.ozogul.96", "gmail.com"].join("@");
+  const konu = "Sayı İzi · Öğretmen-Öğrenci kodu talebi";
+  const govde = "Merhabalar Bedirhan,\n\nSayı İzi uygulamasını denedim. Öğretmen-Öğrenci olarak çalışmak için senden kod talep ediyorum.\n";
+  location.href = "mailto:" + adres + "?subject=" + encodeURIComponent(konu) + "&body=" + encodeURIComponent(govde);
+}
+
+/* ---------- 1923 deneme sürümü ---------- */
 function createRandomTrialSession() {
   const sure = 30;
   const sorular = shuffle(
