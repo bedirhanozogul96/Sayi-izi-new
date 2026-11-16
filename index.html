@@ -8,10 +8,8 @@
 <meta name="theme-color" content="#F2F2F7">
 <title>Sayı İzi</title>
 <meta name="description" content="Özel eğitim ve erken matematik becerileri için etkileşimli basamak değeri, onluk-birlik ve işlem öğretimi uygulaması.">
-<link rel="canonical" href="https://bedirhanozogul.com/">
 <meta property="og:title" content="Sayı İzi">
 <meta property="og:description" content="Özel eğitim ve erken matematik becerileri için etkileşimli basamak değeri, onluk-birlik ve işlem öğretimi uygulaması.">
-<meta property="og:url" content="https://bedirhanozogul.com/">
 <meta property="og:type" content="website">
 <style>
 /* iOS / iPadOS sistem renkleri (UIKit semantic colors) */
@@ -104,45 +102,7 @@ select option{background:var(--cell);color:var(--label)}
 .stepper button:first-child{border-radius:8px 0 0 8px}.stepper button:last-child{border-radius:0 8px 8px 0}
 .stepper .div{width:1px;height:18px;background:var(--border-strong)}
 
-/* ---------- giriş & kişisel portal (Sayı İzi UIKit Arayüzü) ---------- */
-#home{min-height:100vh;padding:max(24px,env(safe-area-inset-top)) 20px 56px;display:flex;flex-direction:column;align-items:center}
-.portal-wrap{width:100%;max-width:1040px;margin:0 auto}
-.portal-topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:20px;flex-wrap:wrap}
-.portal-brand{display:inline-flex;align-items:center;gap:12px;background:var(--cell);border:1.5px solid var(--border);border-radius:16px;padding:8px 16px 8px 10px;box-shadow:var(--card-shadow)}
-.portal-avatar{width:40px;height:40px;border-radius:12px;background:linear-gradient(145deg,var(--blue),var(--indigo));color:#fff;font-family:var(--round);font-size:17px;font-weight:800;display:flex;align-items:center;justify-content:center;letter-spacing:.5px;box-shadow:0 4px 12px rgba(0,122,255,.25)}
-.portal-brand-txt b{display:block;font-size:16px;font-weight:700;line-height:1.2}
-.portal-brand-txt span{display:block;font-size:12px;color:var(--label2);font-weight:500}
-.portal-hero{background:var(--cell);border:1.5px solid var(--border);border-radius:24px;padding:28px 28px 24px;box-shadow:0 8px 30px rgba(15,23,42,.08);margin-bottom:22px;display:grid;grid-template-columns:1.25fr .95fr;gap:24px;align-items:center}
-@media (max-width:820px){.portal-hero{grid-template-columns:1fr;padding:22px 18px}}
-.portal-hero-badge{display:inline-flex;align-items:center;gap:6px;background:var(--tint-blue);border:1px solid rgba(0,122,255,.28);color:var(--blue);font-size:13px;font-weight:700;padding:4px 12px;border-radius:10px;margin-bottom:10px}
-.portal-hero h1{font-family:var(--round);font-size:clamp(26px,3.5vw,36px);font-weight:800;margin:0 0 8px;letter-spacing:-.3px;line-height:1.15}
-.portal-hero p{color:var(--label2);font-size:16px;line-height:1.55;margin:0 0 18px}
-.portal-quick-box{background:var(--cell2);border:1.5px solid var(--border);border-radius:18px;padding:16px}
-.portal-quick-box .q-title{font-size:13px;font-weight:700;color:var(--blue);text-transform:uppercase;letter-spacing:.03em;margin:0 0 8px;display:flex;align-items:center;gap:6px}
-.portal-filter-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:22px 0 14px}
-.portal-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:18px}
-.portal-card{background:var(--cell);border:1.5px solid var(--border);border-radius:22px;padding:22px 20px 20px;box-shadow:0 8px 28px rgba(15,23,42,.07);display:flex;flex-direction:column;transition:transform .2s,border-color .2s,box-shadow .2s}
-.portal-card:hover{transform:translateY(-3px);border-color:var(--border-strong);box-shadow:0 12px 34px rgba(15,23,42,.11)}
-.portal-card.featured{border:2px solid var(--blue);box-shadow:0 10px 32px rgba(0,122,255,.12)}
-.portal-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
-.portal-card .app-icon{margin:0;width:64px;height:64px;border-radius:16px;flex:none}
-.portal-card .app-icon svg{width:40px;height:40px}
-.portal-tag{font-size:12px;font-weight:700;padding:4px 10px;border-radius:8px;border:1px solid transparent;white-space:nowrap}
-.portal-tag.active{background:var(--tint-green);color:var(--green);border-color:rgba(46,184,78,.3)}
-.portal-tag.blue{background:var(--tint-blue);color:var(--blue);border-color:rgba(0,122,255,.3)}
-.portal-tag.orange{background:var(--tint-orange);color:var(--orange);border-color:rgba(245,130,0,.3)}
-.portal-tag.purple{background:var(--tint-purple);color:var(--purple);border-color:rgba(175,82,222,.3)}
-.portal-card h2{font-family:var(--round);font-size:23px;font-weight:700;margin:0 0 6px;letter-spacing:-.2px}
-.portal-card .p-desc{color:var(--label2);font-size:14.5px;line-height:1.48;margin:0 0 14px;flex:1}
-.portal-card .group{background:var(--cell2);border:1.5px solid var(--border);box-shadow:none;margin-bottom:16px}
-.portal-card .group .row{min-height:38px;padding:7px 12px;font-size:13.5px;color:var(--label2);font-weight:500}
-.portal-card .card-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
-.portal-foot{margin-top:32px;text-align:center;color:var(--label2);font-size:13.5px;padding-top:18px;border-top:1px solid var(--sep)}
-.corner-left{position:fixed;top:max(14px,env(safe-area-inset-top));left:18px;z-index:50;background:var(--cell);border:1.5px solid var(--border);border-radius:10px;padding:6px 12px;box-shadow:var(--card-shadow);font-weight:600;font-size:15px}
-.app-viewer-modal{position:fixed;inset:0;z-index:1200;background:var(--bg);display:flex;flex-direction:column}
-.app-viewer-bar{height:52px;background:var(--cell);border-bottom:1.5px solid var(--border);padding:0 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex:none}
-.app-viewer-frame{flex:1;width:100%;border:none;background:var(--bg)}
-
+/* ---------- giriş ---------- */
 #login{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 20px}
 .login-box{width:100%;max-width:460px;background:var(--cell);border:1.5px solid var(--border);border-radius:22px;padding:28px 24px 24px;box-shadow:0 8px 30px rgba(15,23,42,.08)}
 .login-box .group{background:var(--cell2);border:1.5px solid var(--border);box-shadow:none}
@@ -154,19 +114,8 @@ select option{background:var(--cell);color:var(--label)}
 .login-box .seg{margin:0 auto 4px}
 .login-box .group .row{padding-top:0;padding-bottom:0}
 .login-box .btn{margin-top:22px}
-.login-hint{color:var(--label2);font-size:13px;line-height:1.45;text-align:center;margin:10px 4px 0}
-.demo-pill{font-size:13px;font-weight:700;color:var(--orange);background:var(--cell);border:1.5px solid var(--border);border-radius:999px;padding:5px 12px;box-shadow:var(--card-shadow);white-space:nowrap}
-.trial-card{margin-top:18px;padding:16px 16px 14px;border-radius:16px;border:2px solid var(--blue);background:var(--cell2);box-shadow:0 6px 18px rgba(0,122,255,.14);text-align:left}
-.trial-card .tc-title{display:flex;align-items:center;gap:7px;font-size:13px;font-weight:700;letter-spacing:.3px;text-transform:uppercase;color:var(--blue);margin-bottom:8px}
-.trial-card .tc-title .i{width:17px;height:17px}
-.trial-card p{margin:0;font-size:15px;line-height:1.5;color:var(--label)}
-.trial-card .tc-code{display:inline-block;font-weight:800;font-size:16px;letter-spacing:1.5px;color:#fff;background:var(--blue);border-radius:8px;padding:1px 9px}
-.trial-card .tc-mail{margin-top:12px;width:100%;display:flex;align-items:center;gap:11px;padding:10px 12px;border-radius:12px;border:1.5px solid var(--border);background:var(--cell);color:var(--label);font:inherit;font-size:15px;font-weight:600;text-align:left;cursor:pointer}
-.trial-card .tc-mail:hover{border-color:var(--blue)}
-.trial-card .tc-ico{flex:none;width:36px;height:36px;border-radius:10px;background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center}
-.trial-card .tc-ico .i{width:20px;height:20px}
 .login-err{color:var(--red);font-size:13px;text-align:center;min-height:18px;margin:10px 0 0}
-.corner{position:fixed;top:max(14px,env(safe-area-inset-top));right:18px;z-index:50;background:var(--cell);border:1.5px solid var(--border);border-radius:10px;padding:6px 12px;box-shadow:var(--card-shadow)}
+.corner{position:fixed;top:max(14px,env(safe-area-inset-top));right:18px;z-index:50}
 
 /* ---------- öğretmen: kenar çubuğu + içerik ---------- */
 #teacher{display:flex;min-height:100vh}
@@ -471,6 +420,23 @@ select option{background:var(--cell);color:var(--label)}
 
 .rotate-hint{display:none;width:100%;max-width:1120px;align-items:center;justify-content:center;gap:8px;padding:10px 14px;border-radius:12px;background:var(--tint-blue);color:var(--blue);font-size:15px;font-weight:500}
 @media (orientation:portrait) and (max-width:1024px){.rotate-hint{display:flex}}
+
+/* Akordiyon (Ölçüt Karşılama Ayarı) */
+.accordion-body{max-height:260px;opacity:1;overflow:hidden;transition:max-height .32s cubic-bezier(.4,0,.2,1),opacity .22s ease}
+.accordion-body.collapsed{max-height:0;opacity:0;pointer-events:none}
+.accordion-body .row:first-child{border-top:.5px solid var(--sep)}
+
+/* Öğrenci "Hazırsan Başlıyoruz" Bulanık Giriş Katmanı */
+.work-stage{width:100%;display:flex;flex-direction:column;align-items:center;gap:clamp(8px,1.4vh,14px);flex:1;justify-content:space-between;transition:filter .32s ease,transform .32s ease}
+.work-stage.work-blurred{filter:blur(26px);pointer-events:none;user-select:none}
+.ready-gate-overlay{position:fixed;inset:0;z-index:1150;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(15,23,42,.22)}
+.ready-gate-card{width:100%;max-width:480px;background:var(--card);border:1px solid var(--sep);border-radius:28px;padding:34px 28px 28px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.24);animation:pop .24s cubic-bezier(.2,1.2,.4,1)}
+.ready-gate-card .rg-icon{width:76px;height:76px;border-radius:22px;background:linear-gradient(145deg,#3395FF,#0062CC);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;box-shadow:0 12px 26px rgba(0,122,255,.3)}
+.ready-gate-card .rg-icon svg.i{width:40px;height:40px;stroke-width:2.5}
+.ready-gate-card .rg-probe-pill{display:inline-flex;align-items:center;gap:6px;padding:6px 14px;border-radius:99px;background:var(--tint-purple);color:var(--purple);font-size:14px;font-weight:700;margin-bottom:12px}
+.ready-gate-card h2{font-family:var(--round);font-size:clamp(28px,4vw,36px);font-weight:800;margin:0 0 10px;color:var(--label);letter-spacing:-.01em}
+.ready-gate-card p{font-size:17px;color:var(--label2);margin:0 0 26px;line-height:1.45}
+.ready-gate-card .ready-btn{min-height:60px;font-size:22px;font-weight:700;border-radius:18px;width:100%;box-shadow:0 10px 24px rgba(0,122,255,.28)}
 </style>
 </head>
 <body>
@@ -500,85 +466,11 @@ select option{background:var(--cell);color:var(--label)}
   <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M15 5l4 4L8 20H4v-4z"/></symbol>
   <symbol id="i-speaker" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11"/></symbol>
   <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z"/></symbol>
-  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M4 8l8 5.5L20 8"/></symbol>
   <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
 </svg>
 
-<!-- ================= ANA PORTAL (BEDİRHAN ÖZOĞUL · SAYI İZİ) ================= -->
-<section id="home">
-  <div class="portal-wrap">
-    <header class="portal-topbar">
-      <div class="portal-brand">
-        <div class="portal-avatar" aria-hidden="true">BÖ</div>
-        <div class="portal-brand-txt">
-          <b>Bedirhan Özoğul</b>
-          <span>Özel Eğitim &amp; Dijital Öğretim Materyalleri</span>
-        </div>
-      </div>
-      <div style="display:flex;align-items:center;gap:10px">
-        <button class="btn tinted small" onclick="openSayiIziApp()"><svg class="i" style="width:16px;height:16px"><use href="#i-lock"/></svg>Kodla Giriş</button>
-        <button class="plain themeBtn" style="background:var(--cell);border:1.5px solid var(--border);border-radius:10px;padding:6px 12px;box-shadow:var(--card-shadow)" onclick="toggleTheme()" aria-label="Görünüm"></button>
-      </div>
-    </header>
-
-    <div class="portal-hero">
-      <div>
-        <div class="portal-hero-badge"><svg class="i" style="width:15px;height:15px"><use href="#i-spark"/></svg>Etkileşimli Matematik Öğretimi</div>
-        <h1>Sayı İzi · Sayı Doğrusunda Toplama ve Çıkarma</h1>
-        <p>Özel eğitim ve temel matematik becerileri için 0–19 sayı doğrusunda sürükle-bırak, sesli yönlendirme, el yazısı tanıma ve bilimsel araştırmaya dayalı öğretim uygulaması.</p>
-        <div style="display:flex;gap:10px;flex-wrap:wrap">
-          <button class="btn" onclick="openSayiIziApp()">Kodla Giriş Yap →</button>
-        </div>
-      </div>
-
-      <div class="portal-quick-box">
-        <div class="q-title"><svg class="i" style="width:16px;height:16px"><use href="#i-flag"/></svg>Sayı İzi · Hızlı Kod Girişi</div>
-        <div class="group" style="margin-bottom:10px;background:var(--cell)">
-          <div class="row"><input class="field" id="portalStudentCode" placeholder="6 Haneli Kod" maxlength="6" inputmode="numeric" autocomplete="off" oninput="this.value=this.value.replace(/\D/g,'').slice(0,6)"></div>
-        </div>
-        <button class="btn block" style="min-height:42px;font-size:16px" onclick="quickStartFromPortal()">Giriş Yap</button>
-        <div class="login-err" id="portalQuickMsg" style="margin-top:6px;min-height:16px"></div>
-      </div>
-    </div>
-
-    <div class="portal-filter-bar">
-      <div class="group-title" style="margin:0;font-size:14px">Aktif Uygulama</div>
-    </div>
-
-    <div class="portal-grid" id="portalGrid" style="grid-template-columns:1fr">
-      <!-- SADECE SAYI İZİ -->
-      <article class="portal-card featured" data-cat="matematik">
-        <div class="portal-card-head">
-          <div class="app-icon" aria-hidden="true">
-            <svg viewBox="0 0 50 50" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M6 34h38" stroke-width="3"/><path d="M10 30v8M25 30v8M40 30v8" stroke-width="2.6"/>
-              <path d="M10 26c4-12 11-12 15 0M25 26c4-12 11-12 15 0" stroke-width="3"/><path d="M37 22l3 4 3-4" stroke-width="2.6"/>
-            </svg>
-          </div>
-          <span class="portal-tag active">● Aktif Uygulama</span>
-        </div>
-        <h2>Sayı İzi</h2>
-        <p class="p-desc">0–19 sayı doğrusunda sürükle-bırak ve zıplama kemerleriyle eldesiz toplama ve onluk bozmadan çıkarma öğretimi.</p>
-        <div class="group">
-          <div class="row">✓ 0–19 etkileşimli sayı doğrusu, sesli yönlendirme, el yazısı tanıma ve Başarı Madalyası</div>
-          <div class="row">✓ Başlama düzeyi, çoklu Uygulama oturumları, İzleme, Genelleme ve GAG güvenirlik analizi</div>
-          <div class="row">✓ Öğrenci bazlı oturum kodları, WhatsApp paylaşımı, hata analizi ve performans grafiği</div>
-        </div>
-        <div class="card-btns">
-          <button class="btn" style="flex:1;min-height:44px;font-size:16px" onclick="openSayiIziApp()">Sayı İzi'ni Aç (Kodla Giriş) →</button>
-        </div>
-      </article>
-    </div>
-
-    <footer class="portal-foot">
-      <b>bedirhanozogul.com</b> · Sayı İzi — Sayı Doğrusunda Toplama ve Çıkarma Öğretimi
-    </footer>
-  </div>
-</section>
-
-<!-- ================= GİRİŞ (SAYI İZİ) ================= -->
-<section id="login" class="hidden">
-  <button class="plain corner-left" onclick="showScreen('#home')">← Ana Sayfa</button>
+<!-- ================= GİRİŞ ================= -->
+<section id="login">
   <button class="plain corner themeBtn" onclick="toggleTheme()" aria-label="Görünüm"></button>
   <div class="login-box">
     <div class="app-icon" aria-hidden="true">
@@ -589,26 +481,33 @@ select option{background:var(--cell);color:var(--label)}
     </div>
     <h1>Sayı İzi</h1>
     <p class="sub">Sayı doğrusunda toplama ve çıkarma</p>
-    <div class="group-title">Erişim kodu ile giriş</div>
-    <div class="group">
-      <div class="row" style="display:flex;align-items:center;gap:8px">
-        <input type="password" class="field" id="inCode" placeholder="Erişim kodu (6 hane)" maxlength="32" inputmode="numeric" autocomplete="off" aria-label="Erişim kodu" style="flex:1;min-width:0">
-        <button type="button" class="plain" id="codeEyeBtn" onclick="toggleCodeVisible()" style="font-size:13px;font-weight:600;color:var(--blue);white-space:nowrap;padding:6px 4px">Göster</button>
+    <div class="seg wide big" id="roleSeg">
+      <button data-role="ogrenci" class="on">Öğrenci</button>
+      <button data-role="ogretmen">Öğretmen</button>
+      <button data-role="yonetici">Yönetici</button>
+    </div>
+    <div id="studentForm">
+      <div class="group-title">Öğrenci girişi</div>
+      <div class="group">
+        <div class="row"><input class="field" id="inName" placeholder="Adın (Öğretmenin kaydettiği ad)" autocomplete="off" autocapitalize="words"></div>
+        <div class="row"><input class="field" id="inCode" placeholder="Oturum kodu (6 hane)" maxlength="6" inputmode="numeric" autocomplete="off"></div>
       </div>
     </div>
-    <p class="login-hint">Öğrenci ve öğretmenler yalnızca kendilerine verilen <b>6 haneli kodu</b> yazar; ad sorulmaz. Yönetici, şifresini aynı alana girer.</p>
-    <button class="btn block" id="loginBtn" onclick="login()">Giriş Yap</button>
-    <p class="login-err" id="loginMsg"></p>
-
-    <!-- Deneme sürümü ve kod talebi bilgi kartı -->
-    <div class="trial-card" id="trialCard">
-      <div class="tc-title"><svg class="i"><use href="#i-spark"/></svg>Deneme Sürümü</div>
-      <p>Kod kısmına <span class="tc-code">1923</span> yazarsanız deneme sürümünü görebilirsiniz. Öğrenci-Öğretmen çifti olarak çalışma yapabilmek için bana mail gönderebilirsiniz.</p>
-      <button type="button" class="tc-mail" onclick="requestPairCode()">
-        <span class="tc-ico" aria-hidden="true"><svg class="i"><use href="#i-mail"/></svg></span>
-        <span>Öğretmen-Öğrenci çifti için talepte bulun</span>
-      </button>
+    <div id="teacherForm" class="hidden">
+      <div class="group-title">Öğretmen girişi</div>
+      <div class="group">
+        <div class="row"><input class="field" id="inTeacher" placeholder="Öğretmen adınız" autocomplete="off" autocapitalize="words"></div>
+        <div class="row"><input class="field" id="inTeacherCode" placeholder="Öğretmen erişim kodu (6 hane)" maxlength="6" inputmode="numeric" autocomplete="off"></div>
+      </div>
     </div>
+    <div id="adminForm" class="hidden">
+      <div class="group-title">Yönetici girişi</div>
+      <div class="group">
+        <div class="row"><input type="password" class="field" id="inAdminPass" placeholder="Yönetici şifresi" autocomplete="off"></div>
+      </div>
+    </div>
+    <button class="btn block" id="loginBtn" onclick="login()">Başla</button>
+    <p class="login-err" id="loginMsg"></p>
 
     <!-- YÖNETİCİ PANELİ -->
     <div id="adminPanel" class="hidden" style="margin-top:24px">
@@ -663,7 +562,7 @@ select option{background:var(--cell);color:var(--label)}
         </div>
       </div>
 
-      <div class="group-title">Hedef Öğrenci Bilgisi (Kodların Karışmaması İçin · Girişte Sorulmaz)</div>
+      <div class="group-title">Hedef Öğrenci Bilgisi (Girişte Eşleşmesi Zorunludur)</div>
       <div class="group">
         <div class="row icon-row">
           <span class="ico" style="background:var(--blue)"><svg class="i"><use href="#i-person"/></svg></span>
@@ -722,14 +621,26 @@ select option{background:var(--cell);color:var(--label)}
 
           <div class="group-title">Ölçüt Karşılama Ayarı (Mastery Criterion)</div>
           <div class="group">
-            <div class="row icon-row"><span class="ico" style="background:var(--green)"><svg class="i"><use href="#i-flag"/></svg></span><span class="k">Hedef başarı ölçütü</span>
-              <span class="menu"><select id="tOlcutYuzde">
-                <option value="70">%70</option><option value="75">%75</option><option value="80" selected>%80</option><option value="90">%90</option><option value="100">%100</option>
-              </select></span></div>
-            <div class="row icon-row"><span class="ico" style="background:var(--blue)"><svg class="i"><use href="#i-repeat"/></svg></span><span class="k">Ardışık oturum sayısı</span>
-              <span class="menu"><select id="tOlcutOturum">
-                <option value="1">En az 1 oturum</option><option value="2">Ardışık 2 oturum</option><option value="3" selected>Ardışık 3 oturum</option><option value="4">Ardışık 4 oturum</option>
-              </select></span></div>
+            <label class="row icon-row" style="cursor:pointer">
+              <span class="ico" style="background:var(--green)"><svg class="i"><use href="#i-flag"/></svg></span>
+              <span class="k">Ölçüt karşılama ayarını kullan</span>
+              <input type="checkbox" class="switch" id="tOlcutAktif" checked onchange="toggleMasteryCriterion()">
+            </label>
+            <div id="olcutAccordionBody" class="accordion-body">
+              <div class="row icon-row"><span class="ico" style="background:var(--green)"><svg class="i"><use href="#i-flag"/></svg></span><span class="k">Hedef başarı ölçütü</span>
+                <span class="menu"><select id="tOlcutYuzde">
+                  <option value="70">%70</option><option value="75">%75</option><option value="80" selected>%80</option><option value="90">%90</option><option value="100">%100</option>
+                </select></span></div>
+              <div class="row icon-row"><span class="ico" style="background:var(--blue)"><svg class="i"><use href="#i-repeat"/></svg></span><span class="k">Ardışık oturum sayısı</span>
+                <span class="v" id="tOlcutOturumLbl">Ardışık 3 oturum</span>
+                <input type="hidden" id="tOlcutOturum" value="3">
+                <div class="stepper">
+                  <button type="button" onclick="stepOlcutOturum(-1)" aria-label="Azalt">−</button>
+                  <span class="div"></span>
+                  <button type="button" onclick="stepOlcutOturum(1)" aria-label="Artır">+</button>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="group-foot">Süre sayacı yalnızca öğrenci ilk sayıyı sayı doğrusuna sürüklediğinde başlar.</div>
         </div>
@@ -838,11 +749,10 @@ select option{background:var(--cell);color:var(--label)}
   <div class="rotate-hint"><svg class="i"><use href="#i-rotate"/></svg>Daha rahat çalışmak için cihazı yatay çevirin</div>
   <div class="s-top">
     <button class="plain s-exit" onclick="requestExitStudent()"><svg class="i" style="width:18px;height:18px"><use href="#i-exit"/></svg>Çıkış</button>
-    <div class="demo-pill hidden" id="demoPill">Deneme Sürümü · 1923</div>
     <div class="timer hidden" id="timer"></div>
   </div>
 
-  <div id="workArea" style="display:contents">
+  <div id="workArea" class="work-stage">
     <div class="qhead">
       <div class="prompt" id="prompt"></div>
       <div class="equation" id="equation"></div>
@@ -861,6 +771,34 @@ select option{background:var(--cell);color:var(--label)}
       <div class="a-btns">
         <button class="btn tinted-red" id="clearBtn" onclick="clearPad()"><svg class="i"><use href="#i-trash"/></svg>Sil</button>
         <button class="btn" id="okBtn" onclick="submitAnswer()">Onayla</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Öğrenci Hazırım Giriş Katmanı (Arkada Soru Blurlu Durur) -->
+  <div id="readyGateOverlay" class="ready-gate-overlay hidden">
+    <div class="ready-gate-card">
+      <div class="rg-icon"><svg class="i"><use href="#i-spark"/></svg></div>
+      <div id="readyProbeNotice" class="rg-probe-pill hidden"></div>
+      <h2 id="readyGateTitle">Hazırsan başlıyoruz</h2>
+      <p id="readyGateSub">İlk soruyu görmek ve çalışmaya başlamak için aşağıdaki butona bas.</p>
+      <button type="button" class="btn ready-btn" id="studentReadyBtn" onclick="confirmStudentReady()">Hazırım</button>
+    </div>
+  </div>
+
+  <!-- Öğretmen Aynı Kodu Girdiğinde Uygulama Yoklama Oturumu Başlatma Bildirimi -->
+  <div id="uygProbeStartModal" class="modal-backdrop hidden" role="dialog" aria-modal="true">
+    <div class="modal-card" style="max-width:440px;text-align:center">
+      <div class="rg-icon" style="width:64px;height:64px;border-radius:18px;background:var(--purple);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 14px">
+        <svg class="i" style="width:32px;height:32px"><use href="#i-flag"/></svg>
+      </div>
+      <h3 id="uygProbeModalTitle" style="font-size:21px;margin:0 0 8px">Uygulama 1'in yoklama oturumu başlatılıyor</h3>
+      <p id="uygProbeModalDesc" style="font-size:15px;color:var(--label2);margin:0 0 18px;line-height:1.45">
+        Öğretim aşaması tamamlandı. Şimdi öğrencinin performans verisinin toplanacağı yoklama oturumu başlatılacaktır.
+      </p>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <button type="button" class="btn block" onclick="confirmStartUygProbe(true)">Yoklama Oturumunu Başlat</button>
+        <button type="button" class="btn tinted small block" onclick="confirmStartUygProbe(false)">Öğretim Oturumunu Tekrarlat</button>
       </div>
     </div>
   </div>
@@ -890,8 +828,10 @@ select option{background:var(--cell);color:var(--label)}
     </div>
     <h2 id="doneTitle">Bitti!</h2>
     <p id="doneSub"></p>
-    <button class="btn tinted-green hidden" id="newTrialBtn" style="min-width:200px;margin-bottom:10px" onclick="startTrialSession()">Yeni Deneme Soruları</button>
-    <button class="btn" style="min-width:200px" onclick="exitStudent()">Ana Ekran</button>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+      <button class="btn tinted-purple hidden" id="doneStartProbeBtn" style="min-width:220px" onclick="startProbeDirectlyFromDone()">Yoklama Oturumunu Başlat</button>
+      <button class="btn" style="min-width:200px" onclick="exitStudent()">Ana Ekran</button>
+    </div>
   </div>
 
   <!-- Oturum Bitmeden Çıkış İçin Öğretmen Doğrulama Modalı -->
@@ -899,9 +839,13 @@ select option{background:var(--cell);color:var(--label)}
     <div class="modal-card" id="exitModalCard">
       <div class="exit-lock-badge" aria-hidden="true"><svg class="i"><use href="#i-lock"/></svg></div>
       <h3 id="exitModalTitle">Öğretmen Çıkış Doğrulaması</h3>
-      <p>Öğrenci oturumu henüz tamamlanmadı. Oturumu sonlandırıp çıkmak için <b>6 haneli öğretmen kodunu</b> girin.</p>
+      <p>Öğrenci oturumu henüz tamamlanmadı. Oturumu sonlandırıp çıkmak için <b>öğretmen adını</b> ve <b>6 haneli öğretmen kodunu</b> girin.</p>
       <div class="exit-session-pill" id="exitSessionInfo">Aktif Oturum Devam Ediyor</div>
       <div class="group">
+        <div class="row icon-row">
+          <span class="ico" style="background:var(--blue)"><svg class="i"><use href="#i-person"/></svg></span>
+          <input class="field" id="exitTeacherName" placeholder="Öğretmen Adı Soyadı (Zorunlu)" autocomplete="off" autocapitalize="words">
+        </div>
         <div class="row icon-row">
           <span class="ico" style="background:var(--orange)"><svg class="i"><use href="#i-lock"/></svg></span>
           <input class="field" id="exitTeacherCode" placeholder="Öğretmen Kodu (6 haneli sayı)" maxlength="6" inputmode="numeric" autocomplete="off" oninput="this.value=this.value.replace(/\D/g,'').slice(0,6)">
@@ -1111,7 +1055,7 @@ function defaultAyarlar(mod) {
   return {
     hiz: 900, ses: mod === "uygulama", ipucu: mod === "uygulama",
     sureGoster: false, deneme: mod === "uygulama" ? 3 : 1,
-    otoKontrol: mod === "uygulama", olcutYuzde: 80, olcutOturum: 3
+    otoKontrol: mod === "uygulama", olcutAktif: true, olcutYuzde: 80, olcutOturum: 3
   };
 }
 
@@ -1155,7 +1099,7 @@ function loadLocalSession(kod) {
 /* ============================================================
    GİRİŞ VE YÖNETİCİ İZLEME
    ============================================================ */
-const TRIAL_CODE = "1923";
+let role = "ogrenci";
 let teacherName = "";
 let teacherCode = "";
 let adminPassMemory = "";
@@ -1164,26 +1108,36 @@ let teacherPackages = {};
 let currentEditingStudent = "";
 
 function clearNonStudentCredentials() {
-  ["#inCode", "#newTeacherName", "#exitTeacherCode"].forEach(s => {
+  ["#inTeacher", "#inTeacherCode", "#inAdminPass", "#newTeacherName", "#exitTeacherName", "#exitTeacherCode"].forEach(s => {
     const el = $(s);
     if (el) el.value = "";
   });
-  setCodeVisible(false);
 }
 
-function setCodeVisible(show) {
-  const el = $("#inCode"), b = $("#codeEyeBtn");
-  if (el) el.type = show ? "text" : "password";
-  if (b) b.innerText = show ? "Gizle" : "Göster";
+$$("#roleSeg button").forEach(b => b.addEventListener("click", () => {
+  role = b.dataset.role;
+  $$("#roleSeg button").forEach(x => x.classList.toggle("on", x === b));
+  clearNonStudentCredentials();
+  adminPassMemory = "";
+  $("#studentForm").classList.toggle("hidden", role !== "ogrenci");
+  $("#teacherForm").classList.toggle("hidden", role !== "ogretmen");
+  $("#adminForm").classList.toggle("hidden", role !== "yonetici");
+  $("#adminPanel").classList.add("hidden");
+  $("#loginMsg").innerText = "";
+}));
+["#inName", "#inCode", "#inTeacher", "#inTeacherCode", "#inAdminPass"].forEach(s => {
+  const el = $(s); if (el) el.addEventListener("keydown", e => { if (e.key === "Enter") login(); });
+});
+if ($("#exitTeacherName")) {
+  $("#exitTeacherName").addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      const codeEl = $("#exitTeacherCode");
+      if (codeEl && !codeEl.value.trim()) codeEl.focus();
+      else confirmTeacherExit();
+    }
+  });
 }
-function toggleCodeVisible() {
-  const el = $("#inCode");
-  setCodeVisible(el.type === "password");
-  el.focus();
-}
-
-$("#inCode").addEventListener("keydown", e => { if (e.key === "Enter") login(); });
-$("#inCode").addEventListener("input", () => { $("#loginMsg").innerText = ""; });
 if ($("#exitTeacherCode")) {
   $("#exitTeacherCode").addEventListener("keydown", e => {
     if (e.key === "Enter") {
@@ -1198,194 +1152,124 @@ window.addEventListener("keydown", e => {
   }
 });
 
-["#portalStudentCode"].forEach(s => {
-  const el = $(s); if (el) el.addEventListener("keydown", e => { if (e.key === "Enter") quickStartFromPortal(); });
-});
-
 function showScreen(id) {
-  if (id === "#login" || id === "#home") {
+  if (id === "#login") {
     clearNonStudentCredentials();
   }
-  ["#home", "#login", "#teacher", "#student"].forEach(s => {
-    const el = $(s);
-    if (el) el.classList.toggle("hidden", s !== id);
-  });
+  ["#login", "#teacher", "#student"].forEach(s => $(s).classList.toggle("hidden", s !== id));
   window.scrollTo(0, 0);
-}
-
-function openSayiIziApp() {
-  showScreen("#login");
-  $("#loginMsg").innerText = "";
-  setTimeout(() => { if ($("#inCode")) $("#inCode").focus(); }, 50);
-}
-
-function filterPortalCards(cat) {
-  $$("#portalCatSeg button").forEach(b => b.classList.toggle("on", b.dataset.cat === cat));
-  $$("#portalGrid .portal-card").forEach(card => {
-    const match = cat === "all" || card.dataset.cat === cat;
-    card.classList.toggle("hidden", !match);
-  });
-}
-
-async function quickStartFromPortal() {
-  const kod = ($("#portalStudentCode").value || "").trim();
-  const msg = $("#portalQuickMsg");
-  if (msg) msg.innerText = "";
-  if (kod !== TRIAL_CODE && !/^\d{6}$/.test(kod)) {
-    if (msg) msg.innerText = "6 haneli kodunuzu girin.";
-    return;
-  }
-  $("#portalStudentCode").value = "";
-  openSayiIziApp();
-  $("#inCode").value = kod;
-  await login();
-}
-
-/* ---------- kod çözümleme: tek alana yazılan kodun kime ait olduğunu bulur ---------- */
-async function findStudentSession(kod) {
-  let session = null;
-  if (SHEETS_ON) {
-    try { session = normalizeSession(await fetchJSON(`${GOOGLE_SCRIPT_URL}?kod=${encodeURIComponent(kod)}`, 6000), kod); } catch (e) {}
-  }
-  return session || loadLocalSession(kod);
-}
-
-// Öğretmeni yalnızca 6 haneli koduyla doğrular. Ad; yönetici kaydından / sunucudan gelir, girişte sorulmaz.
-async function resolveTeacher(tKod, knownName, remember) {
-  const localTeachers = store.get("sayiizi_ogretmenler", {});
-  const remembered = store.get("sayiizi_bilinen_ogretmenler", {});
-  const ad = knownName || remembered[tKod] || localTeachers[tKod] || "";
-
-  if (!SHEETS_ON) {
-    if (!localTeachers[tKod]) return { ok: false };
-    return { ok: true, ad: localTeachers[tKod], pkgs: store.get("sayiizi_ogretmen_paketler_" + tKod, {}) };
-  }
-
-  const ask = (name, bypass) => fetchJSON(
-    `${GOOGLE_SCRIPT_URL}?islem=ogretmen_dogrula&ogretmenAdi=${encodeURIComponent(name)}&ogretmenKodu=${encodeURIComponent(tKod)}${bypass ? "&adminBypass=1" : ""}`, 7000);
-  try {
-    let res = null;
-    if (ad) res = await ask(ad, false);
-    if (!res || !res.onayla) res = await ask(ad, true);
-    if (!res || !res.onayla) return { ok: false, mesaj: res && res.mesaj };
-    const name = res.ogretmenAdi || ad || "Öğretmen";
-    if (remember !== false) {
-      remembered[tKod] = name;
-      store.set("sayiizi_bilinen_ogretmenler", remembered);
-    }
-    return { ok: true, ad: name, pkgs: res.ogrenciPaketleri || {} };
-  } catch (e) {
-    return { ok: false, netErr: true };
-  }
-}
-
-async function resolveAdmin(pass) {
-  if (!SHEETS_ON) {
-    return pass === ADMIN_SIFRE ? { ok: true, ogretmenler: store.get("sayiizi_ogretmenler", {}) } : { ok: false };
-  }
-  try {
-    const res = await fetchJSON(`${GOOGLE_SCRIPT_URL}?islem=admin_giris&sifre=${encodeURIComponent(pass)}`, 7000);
-    if (!res || !res.onayla) return { ok: false };
-    store.set("sayiizi_ogretmenler", res.ogretmenler || {});
-    return { ok: true, ogretmenler: res.ogretmenler || {} };
-  } catch (e) {
-    return { ok: false, netErr: true };
-  }
 }
 
 async function login() {
   const msg = $("#loginMsg");
   const btn = $("#loginBtn");
-  const busy = t => { btn.disabled = !!t; btn.innerText = t || "Giriş Yap"; };
   msg.innerText = "";
-  $("#adminPanel").classList.add("hidden");
-  adminPassMemory = "";
 
-  const kod = ($("#inCode").value || "").trim();
-  if (!kod) { msg.innerText = "Lütfen erişim kodunuzu girin."; return; }
-
-  // 1) 1923 → rastgele toplama ve çıkarma işlemlerinden oluşan deneme oturumu
-  if (kod === TRIAL_CODE) { startTrialSession(); return; }
-
-  // 2) 6 haneli kod → öğrenci oturumu ya da öğretmen paneli (ad sorulmaz)
-  let netErr = false;
-  if (/^\d{6}$/.test(kod)) {
-    busy("Kod kontrol ediliyor…");
-    const [session, teacher] = await Promise.all([findStudentSession(kod), resolveTeacher(kod)]);
-    busy("");
-    if (session) { startStudent(session, session.hedefOgrenci || ""); return; }
-    if (teacher.ok) { isAdminViewing = false; enterTeacherWorkspace(teacher, kod); return; }
-    netErr = !!teacher.netErr;
-  }
-
-  // 3) Yönetici şifresi
-  busy("Doğrulanıyor…");
-  const admin = await resolveAdmin(kod);
-  busy("");
-  if (admin.ok) {
-    adminPassMemory = kod;
-    clearNonStudentCredentials();
-    renderAdminTeacherList(admin.ogretmenler);
-    $("#adminPanel").classList.remove("hidden");
+  if (role === "yonetici") {
+    const pass = $("#inAdminPass").value.trim();
+    if (!pass) { msg.innerText = "Lütfen yönetici şifresini girin."; return; }
+    btn.disabled = true; btn.innerText = "Doğrulanıyor…";
+    if (SHEETS_ON) {
+      try {
+        const res = await fetchJSON(`${GOOGLE_SCRIPT_URL}?islem=admin_giris&sifre=${encodeURIComponent(pass)}`, 7000);
+        btn.disabled = false; btn.innerText = "Başla";
+        if (!res.onayla) { msg.innerText = res.mesaj || "Şifre hatalı!"; return; }
+        adminPassMemory = pass;
+        $("#inAdminPass").value = "";
+        store.set("sayiizi_ogretmenler", res.ogretmenler || {});
+        renderAdminTeacherList(res.ogretmenler || {});
+        $("#adminPanel").classList.remove("hidden");
+      } catch (e) {
+        btn.disabled = false; btn.innerText = "Başla";
+        msg.innerText = "Sunucuya bağlanılamadı.";
+      }
+    } else {
+      btn.disabled = false; btn.innerText = "Başla";
+      if (pass !== ADMIN_SIFRE) { msg.innerText = "Yönetici şifresi yanlış!"; return; }
+      adminPassMemory = pass;
+      $("#inAdminPass").value = "";
+      renderAdminTeacherList(store.get("sayiizi_ogretmenler", {}));
+      $("#adminPanel").classList.remove("hidden");
+    }
     return;
   }
 
-  msg.innerText = (netErr || admin.netErr)
-    ? "Sunucuya bağlanılamadı. İnternet bağlantınızı kontrol edip tekrar deneyin."
-    : "Geçersiz kod! Öğrenci/öğretmen kodunuzu veya yönetici şifresini kontrol edin.";
+  if (role === "ogretmen") {
+    const n = $("#inTeacher").value.trim();
+    const tKod = $("#inTeacherCode").value.trim();
+    if (!n || !/^\d{6}$/.test(tKod)) {
+      msg.innerText = "Lütfen öğretmen adınızı ve 6 haneli öğretmen kodunuzu girin.";
+      return;
+    }
+    isAdminViewing = false;
+    await openTeacherWorkspace(n, tKod, false);
+    return;
+  }
+
+  const name = $("#inName").value.trim();
+  const kod = $("#inCode").value.trim();
+  if (!name || !/^\d{6}$/.test(kod)) { msg.innerText = "Öğrenci adını ve 6 haneli kodu yazın."; return; }
+  btn.disabled = true; btn.innerText = "Oturum aranıyor…";
+  let session = null;
+  if (SHEETS_ON) {
+    try { session = normalizeSession(await fetchJSON(`${GOOGLE_SCRIPT_URL}?kod=${encodeURIComponent(kod)}`, 6000), kod); } catch (e) {}
+  }
+  if (!session) session = loadLocalSession(kod);
+  btn.disabled = false; btn.innerText = "Başla";
+  if (!session) { msg.innerText = "Bu kodla eşleşen oturum bulunamadı."; return; }
+
+  if (session.hedefOgrenci && cleanName(session.hedefOgrenci) !== cleanName(name)) {
+    msg.innerText = "Bu oturum kodu girdiğiniz öğrenci adına tanımlanmamış! Lütfen öğretmenin kaydettiği öğrenci adını yazın.";
+    return;
+  }
+
+  startStudent(session, session.hedefOgrenci || name);
 }
 
-function enterTeacherWorkspace(t, tKod) {
-  teacherName = t.ad;
-  teacherCode = tKod;
+async function openTeacherWorkspace(n, tKod, adminBypass) {
+  const msg = $("#loginMsg");
+  const btn = $("#loginBtn");
+  btn.disabled = true; btn.innerText = "Kontrol ediliyor…";
+  let pkgs = null;
+
+  if (SHEETS_ON) {
+    try {
+      const url = `${GOOGLE_SCRIPT_URL}?islem=ogretmen_dogrula&ogretmenAdi=${encodeURIComponent(n)}&ogretmenKodu=${encodeURIComponent(tKod)}${adminBypass ? "&adminBypass=1" : ""}`;
+      const res = await fetchJSON(url, 7000);
+      if (!res.onayla) {
+        btn.disabled = false; btn.innerText = "Başla";
+        msg.innerText = res.mesaj || "Öğretmen adı veya kodu doğrulanamadı!";
+        return;
+      }
+      teacherName = res.ogretmenAdi;
+      teacherCode = tKod;
+      pkgs = res.ogrenciPaketleri || {};
+    } catch (e) {
+      btn.disabled = false; btn.innerText = "Başla";
+      msg.innerText = "Doğrulama sunucusuna ulaşılamadı.";
+      return;
+    }
+  } else {
+    const localTeachers = store.get("sayiizi_ogretmenler", {});
+    if (!adminBypass && (!localTeachers[tKod] || cleanName(localTeachers[tKod]) !== cleanName(n))) {
+      btn.disabled = false; btn.innerText = "Başla";
+      msg.innerText = "Öğretmen adı veya kodu hatalı! (Önce Yönetici sekmesinden kod üretin)";
+      return;
+    }
+    teacherName = localTeachers[tKod] || n;
+    teacherCode = tKod;
+    pkgs = store.get("sayiizi_ogretmen_paketler_" + tKod, {});
+  }
+
+  btn.disabled = false; btn.innerText = "Başla";
   clearNonStudentCredentials();
-  teacherPackages = t.pkgs || {};
+  teacherPackages = pkgs || {};
   store.set("sayiizi_ogretmen_paketler_" + teacherCode, teacherPackages);
 
   $("#tWho").innerText = `${teacherName} (#${teacherCode})` + (isAdminViewing ? " · Yönetici İzleme" : "");
   $("#backToAdminBtn").classList.toggle("hidden", !isAdminViewing);
   showScreen("#teacher");
   setTab(isAdminViewing ? "sonuclar" : "olustur");
-}
-
-// Yönetici izleme: öğretmenin adı listeden bilindiği için doğrudan açılır.
-async function openTeacherWorkspace(n, tKod) {
-  const msg = $("#loginMsg");
-  const btn = $("#loginBtn");
-  btn.disabled = true; btn.innerText = "Kontrol ediliyor…";
-  const t = await resolveTeacher(tKod, n);
-  btn.disabled = false; btn.innerText = "Giriş Yap";
-  if (!t.ok) {
-    isAdminViewing = false;
-    msg.innerText = t.netErr ? "Doğrulama sunucusuna ulaşılamadı." : (t.mesaj || "Öğretmen kodu doğrulanamadı!");
-    return;
-  }
-  enterTeacherWorkspace(t, tKod);
-}
-
-/* ---------- kod talebi: hazır metinle e-posta taslağı açar ---------- */
-function requestPairCode() {
-  // Adres, istenmeyen posta toplayıcılarına karşı iki parça tutulur.
-  const adres = ["bedirhan.ozogul.96", "gmail.com"].join("@");
-  const konu = "Sayı İzi · Öğretmen-Öğrenci kodu talebi";
-  const govde = "Merhabalar Bedirhan,\n\nSayı İzi uygulamasını denedim. Öğretmen-Öğrenci olarak çalışmak için senden kod talep ediyorum.\n";
-  location.href = "mailto:" + adres + "?subject=" + encodeURIComponent(konu) + "&body=" + encodeURIComponent(govde);
-}
-
-/* ---------- 1923 deneme sürümü ---------- */
-function createRandomTrialSession() {
-  const sure = 30;
-  const sorular = shuffle(
-    generateRandomQuestionPool("+", sure).slice(0, 5).concat(generateRandomQuestionPool("-", sure).slice(0, 5))
-  );
-  return {
-    kod: TRIAL_CODE, deneme: true, ogretmen: "", ogretmenKodu: "", hedefOgrenci: "",
-    mod: "uygulama", evre: "B", ayarlar: defaultAyarlar("uygulama"), sorular
-  };
-}
-function startTrialSession() {
-  clearNonStudentCredentials();
-  startStudent(createRandomTrialSession(), "");
 }
 
 function logout() {
@@ -1404,8 +1288,8 @@ function returnToAdminPanel() {
   teacherCode = "";
   adminPassMemory = "";
   clearNonStudentCredentials();
-  $("#adminPanel").classList.add("hidden");
-  openSayiIziApp();
+  showScreen("#login");
+  $$("#roleSeg button").forEach(b => { if (b.dataset.role === "yonetici") b.click(); });
 }
 
 function createTeacherCode() {
@@ -1441,7 +1325,7 @@ function adminInspectTeacher(kod, ad) {
   isAdminViewing = true;
   adminPassMemory = "";
   clearNonStudentCredentials();
-  openTeacherWorkspace(ad, kod);
+  openTeacherWorkspace(ad, kod, true);
 }
 
 /* ============================================================
@@ -1608,6 +1492,28 @@ function toggleAllPhases() {
   renderQuestions();
 }
 
+function updateOlcutOturumLabel(val) {
+  const n = Math.max(1, parseInt(val) || 3);
+  const el = $("#tOlcutOturum");
+  const lbl = $("#tOlcutOturumLbl");
+  if (el) el.value = n;
+  if (lbl) lbl.innerText = n === 1 ? "En az 1 oturum" : `Ardışık ${n} oturum`;
+}
+
+function stepOlcutOturum(d) {
+  const cur = parseInt($("#tOlcutOturum").value) || 3;
+  const next = Math.max(1, cur + d);
+  updateOlcutOturumLabel(next);
+  markDirty();
+}
+
+function toggleMasteryCriterion() {
+  const on = $("#tOlcutAktif") ? $("#tOlcutAktif").checked : true;
+  const body = $("#olcutAccordionBody");
+  if (body) body.classList.toggle("collapsed", !on);
+  markDirty();
+}
+
 function resetEditorForNewStudent() {
   $("#tTargetStudent").value = "";
   tUygCount = 1;
@@ -1617,6 +1523,13 @@ function resetEditorForNewStudent() {
   if ($("#tAllPhases")) {
     $("#tAllPhases").checked = true;
   }
+  if ($("#tOlcutAktif")) {
+    $("#tOlcutAktif").checked = true;
+  }
+  if ($("#olcutAccordionBody")) {
+    $("#olcutAccordionBody").classList.remove("collapsed");
+  }
+  updateOlcutOturumLabel(3);
   tCodes = null;
   tDirty = true;
   $("#codeBox").classList.add("hidden");
@@ -1702,8 +1615,11 @@ function selectStudentToEdit(studentName) {
     $("#tSes").checked = pkg.ayarlar.ses !== false;
     $("#tIpucu").checked = pkg.ayarlar.ipucu !== false;
     $("#tSureGoster").checked = !!pkg.ayarlar.sureGoster;
+    const olcutOn = pkg.ayarlar.olcutAktif !== false;
+    if ($("#tOlcutAktif")) $("#tOlcutAktif").checked = olcutOn;
+    if ($("#olcutAccordionBody")) $("#olcutAccordionBody").classList.toggle("collapsed", !olcutOn);
     $("#tOlcutYuzde").value = pkg.ayarlar.olcutYuzde || 80;
-    $("#tOlcutOturum").value = pkg.ayarlar.olcutOturum || 3;
+    updateOlcutOturumLabel(pkg.ayarlar.olcutOturum || 3);
   }
   const hasYoklamaCode = (pkg.tCodes || []).some(c => c.ph && c.ph.mod === "yoklama");
   const useAll = pkg.tumEvreler !== undefined ? !!pkg.tumEvreler : (!pkg.tCodes || hasYoklamaCode);
@@ -1924,8 +1840,9 @@ function readSettings() {
     sureGoster: $("#tSureGoster").checked,
     deneme: parseInt($("#tDeneme").value) || 3,
     otoKontrol: $("#tOto").value === "oto",
+    olcutAktif: $("#tOlcutAktif") ? $("#tOlcutAktif").checked : true,
     olcutYuzde: parseInt($("#tOlcutYuzde").value) || 80,
-    olcutOturum: parseInt($("#tOlcutOturum").value) || 3
+    olcutOturum: Math.max(1, parseInt($("#tOlcutOturum").value) || 3)
   };
 }
 
@@ -1942,7 +1859,7 @@ function renderCodeBox(studentName) {
       <button class="btn tinted-green small" onclick="shareSingleCode('${c.kod}', '${esc(c.ph.ad)}', '${esc(stName)}')"><svg class="i" style="width:15px;height:15px"><use href="#i-share"/></svg>Paylaş</button>
       <button class="btn small" onclick="openStudentHere('${c.kod}', '${esc(stName)}')">Aç</button>
     </div>`).join("");
-  $("#codeMeta").innerText = `Bu kodlar "${stName}" adlı öğrenciye tanımlıdır. Girişte ad sorulmaz; 6 haneli kod yeterlidir.`;
+  $("#codeMeta").innerText = `Bu kodlar yalnızca "${stName}" öğrenci adıyla eşleştiğinde açılır.`;
   $("#codeBox").classList.remove("hidden");
 }
 
@@ -1960,7 +1877,7 @@ function publishSession() {
 
   tCodes = activePhases.map(p => {
     let kod;
-    do { kod = String(Math.floor(100000 + Math.random() * 900000)); } while (used.has(kod) || kod === teacherCode);
+    do { kod = String(Math.floor(100000 + Math.random() * 900000)); } while (used.has(kod));
     used.add(kod);
     return { kod, ph: p };
   });
@@ -2054,11 +1971,9 @@ function triggerNativeShare() {
   }
 }
 
-const SITE_PUBLIC_URL = "https://bedirhanozogul.com/";
-
 function shareSingleCode(kod, phAd, stName) {
   const student = stName || ($("#tTargetStudent") ? $("#tTargetStudent").value.trim() : "");
-  const text = `📚 Sayı İzi Öğrenci Oturumu\n👤 Öğrenci: ${student}\n🎯 Oturum: ${phAd}\n🔑 Oturum Kodu: ${kod}\n👩‍🏫 Öğretmen: ${teacherName}\n🌐 Giriş Adresi: ${SITE_PUBLIC_URL}`;
+  const text = `📚 Sayı İzi Öğrenci Oturumu\n👤 Öğrenci: ${student}\n🎯 Oturum: ${phAd}\n🔑 Oturum Kodu: ${kod}\n👩‍🏫 Öğretmen: ${teacherName}`;
   openShareModal(text);
 }
 
@@ -2066,7 +1981,7 @@ function shareAllCodes() {
   if (!tCodes || !tCodes.length) return;
   const student = $("#tTargetStudent") ? $("#tTargetStudent").value.trim() : "";
   const lines = tCodes.map(c => `• ${c.ph.ad}: ${c.kod}`).join("\n");
-  const text = `📚 Sayı İzi Öğrenci Oturum Kodları\n👤 Öğrenci: ${student}\n👩‍🏫 Öğretmen: ${teacherName}\n\n${lines}\n\n🌐 Giriş Adresi: ${SITE_PUBLIC_URL}`;
+  const text = `📚 Sayı İzi Öğrenci Oturum Kodları\n👤 Öğrenci: ${student}\n👩‍🏫 Öğretmen: ${teacherName}\n\n${lines}`;
   openShareModal(text);
 }
 function openStudentHere(kod, stName) {
@@ -2076,49 +1991,138 @@ function openStudentHere(kod, stName) {
   adminPassMemory = "";
   clearNonStudentCredentials();
   showScreen("#login");
-  $("#adminPanel").classList.add("hidden");
+  $$("#roleSeg button")[0].click();
   $("#inCode").value = kod || tCode;
-  login();
+  if (stName) $("#inName").value = stName;
+  $("#inName").focus();
 }
 
 /* ============================================================
    ÖĞRENCİ ÇALIŞMASI (Sürükleyince Başlayan Sayaç + Zıplama Animasyonları)
    ============================================================ */
 const S = {
-  session: null, name: "", queue: [], idx: 0, results: [], q: null,
+  session: null, baseSession: null, name: "", queue: [], idx: 0, results: [], q: null,
   pos: 0, placed: 0, remaining: [], animating: false, token: 0,
   hata: 0, errTypes: { siralama: 0, surukleme: 0, sembol: 0, sure: 0 },
   firstTouchTime: null, promptCount: 0, promptTimer: null,
   attempts: 0, empties: 0, reads: [], answered: false, checking: false, timeout: false,
-  questionShownAt: 0, start: 0, timerStarted: false, timerPaused: false, timer: null, autoTimer: null
+  readyConfirmed: false, questionShownAt: 0, start: 0, timerStarted: false, timerPaused: false, timer: null, autoTimer: null
 };
-const isUyg = () => S.session && S.session.mod === "uygulama";
-const isTrial = () => !!(S.session && S.session.deneme);
+const isUyg = () => S.session && S.session.mod === "uygulama" && !S.session.isUygProbe;
 function isExitModalOpen() {
   const modal = $("#exitAuthModal");
-  return !!(modal && !modal.classList.contains("hidden"));
+  const probeModal = $("#uygProbeStartModal");
+  return !!((modal && !modal.classList.contains("hidden")) || (probeModal && !probeModal.classList.contains("hidden")) || !S.readyConfirmed);
 }
 function shuffle(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
 
-function startStudent(session, name) {
-  S.session = session; S.name = name; S.idx = 0; S.results = [];
-  S.queue = session.sorular.slice();
-  if (session.mod === "uygulama") shuffle(S.queue);
+function getUygStageKey(kod, studentName) {
+  return "sayiizi_uyg_durum_" + String(kod || "").trim() + "_" + cleanName(studentName || "");
+}
+function getUygStage(kod, studentName) {
+  return store.get(getUygStageKey(kod, studentName), "ogretim");
+}
+function setUygStage(kod, studentName, stage) {
+  store.set(getUygStageKey(kod, studentName), stage);
+}
+
+let pendingUygBaseSession = null;
+let pendingUygStudentName = "";
+
+function startStudent(session, name, forceMode) {
+  const base = JSON.parse(JSON.stringify(session));
+  S.baseSession = base;
+  S.name = name;
   closeExitModal();
   showScreen("#student");
-  $("#demoPill").classList.toggle("hidden", !session.deneme);
-  $("#newTrialBtn").classList.toggle("hidden", !session.deneme);
-  $("#workArea").style.display = "contents";
+
+  if (base.mod === "uygulama" && !forceMode) {
+    const curStage = getUygStage(base.kod, name);
+    if (curStage === "yoklama_bekliyor") {
+      pendingUygBaseSession = base;
+      pendingUygStudentName = name;
+      const evreAd = EVRE[base.evre] || "Uygulama 1";
+      $("#uygProbeModalTitle").innerText = `${evreAd}'in yoklama oturumu başlatılıyor`;
+      $("#uygProbeModalDesc").innerText = `${name} ile ${evreAd} öğretim oturumu tamamlanmış. Şimdi aynı kodla ${evreAd}'in yoklama oturumu başlatılarak öğrencinin verisi toplanacaktır.`;
+      $("#workArea").style.display = "flex";
+      $("#workArea").classList.add("work-blurred");
+      $("#readyGateOverlay").classList.add("hidden");
+      $("#doneArea").classList.add("hidden");
+      $("#uygProbeStartModal").classList.remove("hidden");
+      return;
+    }
+  }
+
+  const runAsProbe = base.mod === "uygulama" && forceMode === "yoklama";
+  const activeSession = JSON.parse(JSON.stringify(base));
+  if (runAsProbe) {
+    activeSession.isUygProbe = true;
+    activeSession.isTeachingStep = false;
+    activeSession.ayarlar = Object.assign({}, activeSession.ayarlar, { ses: false, ipucu: false, deneme: 1 });
+  } else if (base.mod === "uygulama") {
+    activeSession.isUygProbe = false;
+    activeSession.isTeachingStep = true;
+  }
+
+  S.session = activeSession;
+  S.idx = 0;
+  S.results = [];
+  S.readyConfirmed = false;
+  S.queue = activeSession.sorular.slice();
+  if (activeSession.mod === "uygulama" && !activeSession.isUygProbe) shuffle(S.queue);
+
+  $("#uygProbeStartModal").classList.add("hidden");
+  $("#workArea").style.display = "flex";
+  $("#workArea").classList.add("work-blurred");
   $("#doneArea").classList.add("hidden");
+
+  const probeNotice = $("#readyProbeNotice");
+  if (probeNotice) {
+    if (activeSession.isUygProbe) {
+      const evreAd = EVRE[activeSession.evre] || "Uygulama 1";
+      probeNotice.innerText = `${evreAd}'in yoklama oturumu başlatılıyor`;
+      probeNotice.classList.remove("hidden");
+    } else {
+      probeNotice.classList.add("hidden");
+    }
+  }
+  $("#readyGateTitle").innerText = "Hazırsan başlıyoruz";
+  $("#readyGateSub").innerText = "İlk soruyu görmek ve çalışmaya başlamak için aşağıdaki butona bas.";
+  $("#readyGateOverlay").classList.remove("hidden");
+
   buildNumberLine();
   sizePad();
   initOCR().catch(() => {});
   nextQuestion();
 }
 
+function confirmStartUygProbe(asProbe) {
+  $("#uygProbeStartModal").classList.add("hidden");
+  if (!pendingUygBaseSession) return;
+  if (!asProbe) {
+    setUygStage(pendingUygBaseSession.kod, pendingUygStudentName, "ogretim");
+  }
+  startStudent(pendingUygBaseSession, pendingUygStudentName, asProbe ? "yoklama" : "ogretim");
+}
+
+function startProbeDirectlyFromDone() {
+  if (!S.baseSession || !S.name) return;
+  startStudent(S.baseSession, S.name, "yoklama");
+}
+
+function confirmStudentReady() {
+  S.readyConfirmed = true;
+  $("#readyGateOverlay").classList.add("hidden");
+  $("#workArea").classList.remove("work-blurred");
+  sizePad();
+  S.questionShownAt = Date.now();
+  S.firstTouchTime = null;
+  schedulePromptHint();
+}
+
 function requestExitStudent() {
   const isFinished = !$("#doneArea").classList.contains("hidden") || !S.q;
-  if (isFinished || isTrial()) {
+  if (isFinished) {
     exitStudent();
     return;
   }
@@ -2132,16 +2136,18 @@ function requestExitStudent() {
     const stLabel = S.name ? `Öğrenci: ${S.name} · ` : "";
     infoEl.innerText = `${stLabel}Soru ${cur} / ${total} devam ediyor`;
   }
+  $("#exitTeacherName").value = "";
   $("#exitTeacherCode").value = "";
   $("#exitModalMsg").innerText = "";
   $("#exitAuthModal").classList.remove("hidden");
-  setTimeout(() => $("#exitTeacherCode").focus(), 50);
+  setTimeout(() => $("#exitTeacherName").focus(), 50);
 }
 
 function closeExitModal() {
   const modal = $("#exitAuthModal");
   const wasOpen = modal && !modal.classList.contains("hidden");
   if (modal) modal.classList.add("hidden");
+  if ($("#exitTeacherName")) $("#exitTeacherName").value = "";
   if ($("#exitTeacherCode")) $("#exitTeacherCode").value = "";
   if ($("#exitModalMsg")) $("#exitModalMsg").innerText = "";
   S.timerPaused = false;
@@ -2151,37 +2157,65 @@ function closeExitModal() {
 }
 
 async function confirmTeacherExit() {
+  const n = ($("#exitTeacherName").value || "").trim();
   const c = ($("#exitTeacherCode").value || "").trim();
   const msg = $("#exitModalMsg");
   const btn = $("#exitConfirmBtn");
   const card = $("#exitModalCard");
-  const shake = () => { card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake"); };
   msg.innerText = "";
 
+  if (!n && !c) {
+    msg.innerText = "Çıkış yapabilmek için öğretmen adını ve 6 haneli öğretmen kodunu girmelisiniz.";
+    card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake");
+    $("#exitTeacherName").focus();
+    return;
+  }
+  if (!n) {
+    msg.innerText = "Lütfen öğretmen adını girin.";
+    card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake");
+    $("#exitTeacherName").focus();
+    return;
+  }
   if (!/^\d{6}$/.test(c)) {
     msg.innerText = "Lütfen 6 haneli öğretmen kodunu eksiksiz girin.";
-    shake();
+    card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake");
     $("#exitTeacherCode").focus();
     return;
   }
 
-  const same = x => !!x && String(x).trim() === c;
-  let verified = !!(S.session && same(S.session.ogretmenKodu));
-  if (!verified && store.get("sayiizi_ogretmenler", {})[c]) verified = true;
+  let verified = false;
+  if (S.session && S.session.ogretmen && S.session.ogretmenKodu) {
+    if (cleanName(S.session.ogretmen) === cleanName(n) && String(S.session.ogretmenKodu).trim() === c) {
+      verified = true;
+    }
+  }
+  if (!verified) {
+    const localTeachers = store.get("sayiizi_ogretmenler", {});
+    if (localTeachers[c] && cleanName(localTeachers[c]) === cleanName(n)) {
+      verified = true;
+    }
+  }
   if (!verified && S.session && S.session.kod) {
     const savedSess = store.get("sayiizi_oturum_" + S.session.kod, null);
-    if (savedSess && same(savedSess.ogretmenKodu)) verified = true;
+    if (savedSess && savedSess.ogretmen && savedSess.ogretmenKodu) {
+      if (cleanName(savedSess.ogretmen) === cleanName(n) && String(savedSess.ogretmenKodu).trim() === c) {
+        verified = true;
+      }
+    }
   }
   if (!verified && SHEETS_ON) {
     btn.disabled = true; btn.innerText = "Doğrulanıyor…";
-    const t = await resolveTeacher(c, "", false);
-    verified = t.ok;
+    try {
+      const url = `${GOOGLE_SCRIPT_URL}?islem=ogretmen_dogrula&ogretmenAdi=${encodeURIComponent(n)}&ogretmenKodu=${encodeURIComponent(c)}`;
+      const res = await fetchJSON(url, 6000);
+      if (res && res.onayla) verified = true;
+    } catch (e) {}
     btn.disabled = false; btn.innerText = "Doğrula ve Çık";
   }
 
   if (!verified) {
-    msg.innerText = "Öğretmen kodu hatalı! Oturum bitmeden çıkış yapılamaz.";
-    shake();
+    msg.innerText = "Öğretmen adı veya öğretmen kodu hatalı! Oturum bitmeden çıkış yapılamaz.";
+    card.classList.remove("shake"); void card.offsetWidth; card.classList.add("shake");
     return;
   }
 
@@ -2192,6 +2226,9 @@ async function confirmTeacherExit() {
 function exitStudent() {
   stopTimer(); clearTimeout(S.autoTimer); clearPromptTimer(); S.token++; S.q = null;
   closeExitModal();
+  if ($("#readyGateOverlay")) $("#readyGateOverlay").classList.add("hidden");
+  if ($("#uygProbeStartModal")) $("#uygProbeStartModal").classList.add("hidden");
+  if ($("#workArea")) $("#workArea").classList.remove("work-blurred");
   isAdminViewing = false;
   teacherName = "";
   teacherCode = "";
@@ -2204,10 +2241,12 @@ function setMsg(text, cls) { const m = $("#msg"); m.innerText = text || ""; m.cl
 
 function toast(html, cls, ms) {
   const t = $("#toast");
-  const icon = { ok: "i-check", retry: "i-excl", bad: "i-x", neutral: "i-check" }[cls] || "i-check";
+  const icon = { ok: "i-check", retry: "i-excl", bad: "i-x", neutral: "i-chev" }[cls] || "i-check";
   const parts = String(html).split("<small>");
-  t.innerHTML = `<div class="badge"><svg class="i"><use href="#${icon}"/></svg></div>` + (cls === "neutral" ? "" :
-    `<div class="t1">${parts[0]}</div>` + (parts[1] ? `<div class="t2">${parts[1].replace("</small>", "")}</div>` : ""));
+  t.innerHTML = `<div class="badge"><svg class="i"><use href="#${icon}"/></svg></div>` +
+    (cls === "neutral"
+      ? `<div class="t1" style="font-size:clamp(20px,2.6vw,26px)">${parts[0]}</div>`
+      : `<div class="t1">${parts[0]}</div>` + (parts[1] ? `<div class="t2">${parts[1].replace("</small>", "")}</div>` : ""));
   t.className = "toast " + cls;
   requestAnimationFrame(() => t.classList.add("show"));
   clearTimeout(toast._t);
@@ -2337,17 +2376,26 @@ function handleQuestionTimeout() {
   S.timeout = true;
   S.hata++;
   if (S.errTypes && S.errTypes.sure !== undefined) S.errTypes.sure++;
+  if (isUyg()) {
+    setMsg("Süren doldu, bu soruyu doğru tamamlayana kadar tekrar deneyelim.", "warn");
+    toast("Süren doldu!<small>Soruyu tekrar yapalım</small>", "retry", 2200);
+    if (!S.session || !S.session.ayarlar || S.session.ayarlar.ses !== false) {
+      speak("Süren doldu, dikkat et ve soruyu tekrar yap.");
+    }
+    setTimeout(() => {
+      if (S.q === q && !S.answered) retryQuestion();
+    }, 2300);
+    return;
+  }
   const box = hasInk ? inkBox() : null;
   const thumb = box ? thumbnail(box) : null;
   record(false, "", thumb);
-  setMsg("Süren doldu, bir sonraki soruya geçiyoruz.", "warn");
-  toast("Süren doldu!<small>Bir sonraki soruya geçiyoruz</small>", "bad", 2500);
-  if (!S.session || !S.session.ayarlar || S.session.ayarlar.ses !== false) {
-    speak(getDetailedErrorSpeech("sure"));
-  }
+  const nextTxt = S.idx < S.queue.length ? "Sonraki soruya geçiyoruz…" : "Oturum tamamlanıyor…";
+  setMsg(nextTxt, "info");
+  toast(nextTxt, "neutral", 1400);
   setTimeout(() => {
     if (S.q === q) nextQuestion();
-  }, 2700);
+  }, 1600);
 }
 
 function startTimer(sec) {
@@ -2568,8 +2616,8 @@ function dropMarker(i, val, count, final, lane) {
   m.innerHTML = `<span>${count}</span>`;
   zone.appendChild(m);
 
-  // Son adıma ulaştığında yıldız parçacıkları patlat
-  if (final) {
+  // Son adıma ulaştığında yalnızca uygulama (öğretim) modunda yıldız parçacıkları patlat
+  if (final && isUyg()) {
     const r = zone.getBoundingClientRect();
     burstParticles(r.left + r.width / 2, r.top + 35, SHAPE_COLORS[val], 14);
   }
@@ -2731,16 +2779,22 @@ async function submitAnswer() {
   if (S.q !== q) return;
 
   if (ocrError) {
+    if (isUyg()) {
+      setMsg("Rakam okunamadı, lütfen cevabı tekrar yaz.", "info");
+      clearPad(true); lockAnswer(false);
+      return;
+    }
     S.attempts++;
     record(null, "", thumb);
     setMsg("");
-    toast("✓", "neutral", 900);
-    return setTimeout(nextQuestion, 1100);
+    const nextTxt = S.idx < S.queue.length ? "Sonraki soruya geçiyoruz…" : "Oturum tamamlanıyor…";
+    toast(nextTxt, "neutral", 1050);
+    return setTimeout(nextQuestion, 1200);
   }
 
   if (!read) {
     S.empties++;
-    if (S.empties < 3) {
+    if (isUyg() || S.empties < 3) {
       setMsg("Rakamı biraz daha büyük yaz", "info");
       if (isUyg() && S.session.ayarlar.ses) speak("Tekrar dene. Rakamı biraz daha büyük yaz.");
       clearPad(true); lockAnswer(false);
@@ -2756,8 +2810,9 @@ async function submitAnswer() {
     if (!correct) { S.hata++; S.errTypes.sembol++; }
     record(correct, read, thumb);
     setMsg("");
-    toast("✓", "neutral", 900);
-    return setTimeout(nextQuestion, 1100);
+    const nextTxt = S.idx < S.queue.length ? "Sonraki soruya geçiyoruz…" : "Oturum tamamlanıyor…";
+    toast(nextTxt, "neutral", 1050);
+    return setTimeout(nextQuestion, 1200);
   }
 
   if (correct) {
@@ -2772,18 +2827,12 @@ async function submitAnswer() {
     }
     return setTimeout(nextQuestion, 2300);
   }
+  // Uygulama (öğretim) oturumunda öğrenci her soruyu doğru yapmak zorundadır:
   const opText = `${q.num1} ${q.op === "-" ? "−" : "+"} ${q.num2} = ${expected}`;
   const opSpeech = formatOperationSpeech(q);
-  if (S.attempts >= S.session.ayarlar.deneme) {
-    registerStudentError("sembol", opSpeech);
-    record(false, read, thumb);
-    setMsg("");
-    toast(`Dikkat et!<small>${opText}</small>`, "bad", 2600);
-    return setTimeout(nextQuestion, 2900);
-  }
   registerStudentError("sembol", opSpeech);
-  toast(`Dikkat et!<small>${opText}</small>`, "retry", 2300);
-  setMsg("");
+  toast(`Dikkat et!<small>${opText}</small>`, "retry", 2400);
+  setMsg(`Doğru cevap ${expected}. Sayıları sürükleyip ${expected} yazalım.`, "warn");
   lockAnswer(true);
   setTimeout(() => { if (S.q === q && !S.answered) retryQuestion(); }, 2500);
 }
@@ -2849,67 +2898,79 @@ function finishSession() {
   stopTimer(); clearPromptTimer();
   S.q = null;
   const s = S.session;
-  const res = {
-    id: `${s.kod}-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
-    ogrenci: S.name, kod: s.kod, ogretmen: s.ogretmen, ogretmenKodu: s.ogretmenKodu || "",
-    mod: s.mod, evre: s.evre, tarih: new Date().toISOString(), sorular: S.results
-  };
-  const who = S.name ? " " + S.name : "";
-  if (!s.deneme) {
-    const all = store.get("sayiizi_sonuclar", []);
-    all.push(res);
-    if (!store.set("sayiizi_sonuclar", all)) {
-      all[all.length - 1] = Object.assign({}, res, { sorular: res.sorular.map(q => Object.assign({}, q, { resim: null })) });
-      store.set("sayiizi_sonuclar", all);
-    }
-  }
-  const totalQ = res.sorular.length;
-  const dogru = res.sorular.filter(q => q.dogru === true).length;
-  const pct = totalQ ? Math.round((dogru / totalQ) * 100) : 0;
-  const targetPct = (s.ayarlar && +s.ayarlar.olcutYuzde) ? +s.ayarlar.olcutYuzde : 80;
-  const earnedMedal = pct >= targetPct;
-
-  if (!s.deneme) post({
-    islemTipi: "oturum_sonuc_ozeti", sonucId: res.id, ogrenciAdi: res.ogrenci, oturumKodu: res.kod,
-    ogretmenAdi: res.ogretmen, ogretmenKodu: res.ogretmenKodu || "", calismaTuru: res.mod, evre: res.evre, tarih: res.tarih,
-    toplamSoru: totalQ, dogruSayisi: dogru,
-    detaylar: JSON.stringify(res.sorular.map(q => Object.assign({}, q, { resim: undefined }))),
-    resimler: JSON.stringify(res.sorular.map(q => q.resim || ""))
-  });
+  const evreLabel = EVRE[s.evre] || "Uygulama 1";
 
   $("#workArea").style.display = "none";
+  $("#workArea").classList.remove("work-blurred");
+  $("#readyGateOverlay").classList.add("hidden");
   $("#timer").classList.add("hidden");
   $("#doneArea").classList.remove("hidden");
 
   const sealEl = $("#doneSeal");
   const medalCard = $("#doneMedalCard");
-  if (s.mod === "uygulama" && earnedMedal) {
-    if (sealEl) sealEl.classList.add("hidden");
-    if (medalCard) {
-      medalCard.classList.remove("hidden");
-      $("#doneMedalTag").innerText = `%${pct} Başarı · Hedef %${targetPct} Karşılandı`;
-      $("#doneMedalTitle").innerText = `Tebrikler${who}, Başarı Madalyası Kazandın!`;
-      $("#doneMedalDesc").innerText = `${totalQ} sorudan ${dogru} tanesini doğru yaparak başarı ölçütüne ulaştın!`;
-    }
-    $("#doneTitle").innerText = `Harika İş Çıkardın!`;
-    $("#doneSub").innerText = `${s.deneme ? "Deneme" : (EVRE[s.evre] || "Uygulama")} oturumunu madalya ile tamamladın.`;
-    launchConfettiRain(60);
-    burstParticles(window.innerWidth / 2, window.innerHeight / 3, "#F59E0B", 38);
-    setTimeout(() => burstParticles(window.innerWidth * 0.35, window.innerHeight * 0.35, "#2EB84E", 24), 320);
-    setTimeout(() => burstParticles(window.innerWidth * 0.65, window.innerHeight * 0.35, "#007AFF", 24), 600);
-    if (!s.ayarlar || s.ayarlar.ses !== false) {
-      speak(`Tebrikler${who}! Yüzde ${pct} başarıyla Başarı Madalyası kazandın! Aferin sana!`);
-    }
-  } else {
+  const startProbeBtn = $("#doneStartProbeBtn");
+
+  // 1) Eğer bu oturum Uygulama'nın ÖĞRETİM basamağı ise:
+  // Uygulama 1'in asıl verisi, hemen ardından gelen "Uygulama 1'in yoklama oturumu" verisidir.
+  if (s.mod === "uygulama" && !s.isUygProbe) {
+    setUygStage(s.kod, S.name, "yoklama_bekliyor");
     if (sealEl) sealEl.classList.remove("hidden");
     if (medalCard) medalCard.classList.add("hidden");
-    burstParticles(window.innerWidth / 2, window.innerHeight / 3, "#34C759", 32);
-    $("#doneTitle").innerText = `Bitti! Aferin${who}`;
-    $("#doneSub").innerText = s.mod === "uygulama" ? `${totalQ} sorudan ${dogru} tanesini doğru yaptın (%${pct}).` : "Tüm soruları tamamladın.";
-    if (s.mod === "uygulama" && (!s.ayarlar || s.ayarlar.ses !== false)) {
-      speak("Bitti! Aferin" + who);
+    if (startProbeBtn) {
+      startProbeBtn.innerText = `${evreLabel}'in Yoklama Oturumunu Başlat`;
+      startProbeBtn.classList.remove("hidden");
     }
+    burstParticles(window.innerWidth / 2, window.innerHeight / 3, "#34C759", 28);
+    $("#doneTitle").innerText = `${evreLabel} Öğretimi Tamamlandı!`;
+    $("#doneSub").innerText = `Sırada ${evreLabel}'in yoklama oturumu var. Aynı kodu (${s.kod}) tekrar girdiğinizde veya aşağıdaki butona bastığınızda ${evreLabel}'in yoklama oturumu başlatılacaktır.`;
+    if (!s.ayarlar || s.ayarlar.ses !== false) {
+      speak(`Bitti! Aferin ${S.name}.`);
+    }
+    return;
   }
+
+  if (startProbeBtn) startProbeBtn.classList.add("hidden");
+
+  // Uygulama'nın yoklama oturumu tamamlandıysa durumu sıfırla ve veriyi Uygulama verisi olarak kaydet
+  if (s.isUygProbe) {
+    setUygStage(s.kod, S.name, "ogretim");
+  }
+
+  const all = store.get("sayiizi_sonuclar", []);
+  const studentSameModCount = all.filter(x => x && cleanName(x.ogrenci || x.ogrenciAdi) === cleanName(S.name) && ((x.mod || x.calismaTuru) === s.mod)).length;
+  const siraNo = studentSameModCount + 1;
+  const oturumEtiketi = `${s.mod === "yoklama" ? "Yoklama" : "Uygulama"} ${siraNo}`;
+
+  const res = {
+    id: `${s.kod}-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`,
+    ogrenci: S.name, kod: s.kod, ogretmen: s.ogretmen, ogretmenKodu: s.ogretmenKodu || "",
+    mod: s.mod, evre: s.evre, siraNo, oturumEtiketi,
+    uygYoklamaVerisi: !!s.isUygProbe,
+    tarih: new Date().toISOString(), sorular: S.results
+  };
+  all.push(res);
+  if (!store.set("sayiizi_sonuclar", all)) {
+    all[all.length - 1] = Object.assign({}, res, { sorular: res.sorular.map(q => Object.assign({}, q, { resim: null })) });
+    store.set("sayiizi_sonuclar", all);
+  }
+  const totalQ = res.sorular.length;
+  const dogru = res.sorular.filter(q => q.dogru === true).length;
+
+  post({
+    islemTipi: "oturum_sonuc_ozeti", sonucId: res.id, ogrenciAdi: res.ogrenci, oturumKodu: res.kod,
+    ogretmenAdi: res.ogretmen, ogretmenKodu: res.ogretmenKodu || "", calismaTuru: res.mod,
+    oturumEtiketi: res.oturumEtiketi, evre: res.evre, tarih: res.tarih,
+    toplamSoru: totalQ, dogruSayisi: dogru,
+    detaylar: JSON.stringify(res.sorular.map(q => Object.assign({}, q, { resim: undefined }))),
+    resimler: JSON.stringify(res.sorular.map(q => q.resim || ""))
+  });
+
+  // Yoklama oturumlarında (Başlama düzeyi, İzleme, Genelleme ve Uygulama'nın yoklama oturumu)
+  // %80 geçilse bile öğrenci tebrik edilmez, madalya/konfeti gösterilmez.
+  if (sealEl) sealEl.classList.remove("hidden");
+  if (medalCard) medalCard.classList.add("hidden");
+  $("#doneTitle").innerText = "Oturum Tamamlandı";
+  $("#doneSub").innerText = "Tüm sorular tamamlandı.";
 }
 
 function showMedalCelebration(studentName, pct, targetPct, detailText) {
@@ -3107,9 +3168,65 @@ function filtered() {
 
 function getStudentCriterion(studentName) {
   const pkg = teacherPackages && teacherPackages[studentName];
+  const aktif = (pkg && pkg.ayarlar && pkg.ayarlar.olcutAktif !== undefined)
+    ? !!pkg.ayarlar.olcutAktif
+    : ($("#tOlcutAktif") ? $("#tOlcutAktif").checked : true);
   const yuzde = (pkg && pkg.ayarlar && pkg.ayarlar.olcutYuzde) ? +pkg.ayarlar.olcutYuzde : (+$("#tOlcutYuzde").value || 80);
   const oturum = (pkg && pkg.ayarlar && pkg.ayarlar.olcutOturum) ? +pkg.ayarlar.olcutOturum : (+$("#tOlcutOturum").value || 3);
-  return { yuzde, oturum };
+  return { aktif, yuzde, oturum: Math.max(1, oturum) };
+}
+
+// Her öğrencinin Yoklama oturumlarını "Yoklama 1, Yoklama 2..." ve Uygulama oturumlarını "Uygulama 1, Uygulama 2..." olarak numaralandırır
+function getSessionSequenceMap() {
+  const map = {};
+  const counters = {};
+  RESULTS.forEach(r => {
+    const key = cleanName(r.ogrenci) + "__" + r.mod;
+    counters[key] = (counters[key] || 0) + 1;
+    map[r.id] = `${r.mod === "yoklama" ? "Yoklama" : "Uygulama"} ${counters[key]}`;
+  });
+  return map;
+}
+
+let pendingDeleteResultId = null;
+function deleteSessionResult(id, btnEl) {
+  if (pendingDeleteResultId !== id) {
+    pendingDeleteResultId = id;
+    if (btnEl) {
+      btnEl.innerText = "Silmeyi Onayla?";
+      btnEl.classList.remove("tinted-red");
+      btnEl.style.background = "var(--red)";
+      btnEl.style.color = "#fff";
+      setTimeout(() => {
+        if (pendingDeleteResultId === id) {
+          pendingDeleteResultId = null;
+          renderResults();
+        }
+      }, 4000);
+    }
+    return;
+  }
+  pendingDeleteResultId = null;
+  const target = RESULTS.find(r => r.id === id);
+  RESULTS = RESULTS.filter(r => r.id !== id);
+  const localAll = store.get("sayiizi_sonuclar", []).filter(r => {
+    const norm = normalizeResult(r);
+    return norm && norm.id !== id;
+  });
+  store.set("sayiizi_sonuclar", localAll);
+  if (FIX[id]) { delete FIX[id]; store.set("sayiizi_duzeltmeler", FIX); }
+  if (GAG_FIX[id]) { delete GAG_FIX[id]; store.set("sayiizi_gag_puanlar", GAG_FIX); }
+  if (openRow === id) openRow = null;
+  post({
+    islemTipi: "sonuc_sil",
+    sonucId: id,
+    ogretmenAdi: teacherName,
+    ogretmenKodu: teacherCode,
+    ogrenciAdi: target ? target.ogrenci : ""
+  });
+  renderStudentPills();
+  renderResults();
+  renderChart();
 }
 
 let lastCelebratedResultKey = "";
@@ -3121,36 +3238,33 @@ function renderCriterionAndGagBanners(rows) {
     gagEl.classList.add("hidden");
     return;
   }
-  const { yuzde, oturum } = getStudentCriterion(selectedResultStudent);
+  const { aktif, yuzde, oturum } = getStudentCriterion(selectedResultStudent);
   const chronological = rows.slice().reverse();
   const latestSession = chronological[chronological.length - 1];
   const latestSummary = summary(latestSession);
   const lastPhase = basePhaseKey(latestSession.evre);
   const phaseSessions = chronological.filter(r => basePhaseKey(r.evre) === lastPhase);
   const recent = phaseSessions.slice(-oturum);
-  const met = recent.length >= oturum && recent.every(r => summary(r).pct >= yuzde);
-  const latestEarnedMedal = latestSummary.pct >= yuzde;
+  const isUygPhase = latestSession.mod === "uygulama";
+  const met = aktif && recent.length >= oturum && recent.every(r => summary(r).pct >= yuzde);
+  const latestEarnedMedal = aktif && isUygPhase && latestSummary.pct >= yuzde;
 
-  critEl.classList.remove("hidden", "met", "wait");
-  critEl.classList.add((met || latestEarnedMedal) ? "met" : "wait");
-  const avgRecentPct = recent.length ? Math.round(recent.reduce((acc, r) => acc + summary(r).pct, 0) / recent.length) : 0;
-  if (met) {
-    critEl.innerHTML = `<span><b>🏅 Başarı Madalyası & Ölçüt Karşılandı (${esc(basePhaseTitle(lastPhase))}):</b> <b>${esc(selectedResultStudent)}</b> son ${oturum} ardışık oturumda <b>%${yuzde}</b> ve üzeri başarı gösterdi (Ort. <b>%${avgRecentPct}</b>).</span>
-       <button type="button" class="btn small" style="background:#F59E0B;color:#fff;border-color:#D97706" onclick="showMedalCelebration('${esc(selectedResultStudent)}', ${avgRecentPct}, ${yuzde}, '${esc(selectedResultStudent)}, ${esc(basePhaseTitle(lastPhase))} evresinde son ${oturum} ardışık oturumda %${yuzde} başarı ölçütünü karşılayarak Başarı Madalyası kazandı!')">🎉 Başarı Madalyasını Kutla</button>`;
-  } else if (latestEarnedMedal) {
-    critEl.innerHTML = `<span><b>🏅 Başarı Madalyası Kazanıldı (${esc(EVRE[latestSession.evre] || latestSession.evre)}):</b> <b>${esc(selectedResultStudent)}</b> son oturumda <b>%${latestSummary.pct}</b> (${latestSummary.d}/${latestSummary.n} doğru) ile <b>%${yuzde}</b> başarı ölçütünü aştı! (Ardışık ölçüt takibi: ${phaseSessions.length}/${oturum} oturum)</span>
-       <button type="button" class="btn small" style="background:#F59E0B;color:#fff;border-color:#D97706" onclick="showMedalCelebration('${esc(selectedResultStudent)}', ${latestSummary.pct}, ${yuzde}, '${esc(selectedResultStudent)}, ${esc(EVRE[latestSession.evre] || latestSession.evre)} oturumunda %${latestSummary.pct} başarı göstererek Başarı Madalyası kazandı!')">🎉 Başarı Madalyasını Kutla</button>`;
+  if (!aktif) {
+    critEl.classList.add("hidden");
   } else {
-    critEl.innerHTML = `<span><b>Ölçüt Takibi (${esc(basePhaseTitle(lastPhase))}):</b> Hedef ardışık ${oturum} oturumda en az <b>%${yuzde}</b> başarı (${phaseSessions.length} oturum tamamlandı).</span>`;
-  }
-
-  if ((met || latestEarnedMedal) && !$("#tab-sonuclar").classList.contains("hidden")) {
-    const celKey = `${selectedResultStudent}-${latestSession.id}-${met ? avgRecentPct : latestSummary.pct}`;
-    if (lastCelebratedResultKey !== celKey) {
-      lastCelebratedResultKey = celKey;
-      const celPct = met ? avgRecentPct : latestSummary.pct;
-      launchConfettiRain(45);
-      speak(`Tebrikler ${selectedResultStudent}! Yüzde ${celPct} başarıyla Başarı Madalyası kazandın!`);
+    critEl.classList.remove("hidden", "met", "wait");
+    critEl.classList.add((met || latestEarnedMedal) ? "met" : "wait");
+    const avgRecentPct = recent.length ? Math.round(recent.reduce((acc, r) => acc + summary(r).pct, 0) / recent.length) : 0;
+    if (met && isUygPhase) {
+      critEl.innerHTML = `<span><b>🏅 Başarı Madalyası & Ölçüt Karşılandı (${esc(basePhaseTitle(lastPhase))}):</b> <b>${esc(selectedResultStudent)}</b> son ${oturum} ardışık oturumda <b>%${yuzde}</b> ve üzeri başarı gösterdi (Ort. <b>%${avgRecentPct}</b>).</span>
+         <button type="button" class="btn small" style="background:#F59E0B;color:#fff;border-color:#D97706" onclick="showMedalCelebration('${esc(selectedResultStudent)}', ${avgRecentPct}, ${yuzde}, '${esc(selectedResultStudent)}, ${esc(basePhaseTitle(lastPhase))} evresinde son ${oturum} ardışık oturumda %${yuzde} başarı ölçütünü karşılayarak Başarı Madalyası kazandı!')">🎉 Başarı Madalyasını Kutla</button>`;
+    } else if (met && !isUygPhase) {
+      critEl.innerHTML = `<span><b>Ölçüt Karşılandı (${esc(basePhaseTitle(lastPhase))}):</b> <b>${esc(selectedResultStudent)}</b> son ${oturum} ardışık oturumda <b>%${yuzde}</b> ve üzeri performans gösterdi (Ort. <b>%${avgRecentPct}</b>).</span>`;
+    } else if (latestEarnedMedal) {
+      critEl.innerHTML = `<span><b>🏅 Başarı Madalyası Kazanıldı (${esc(EVRE[latestSession.evre] || latestSession.evre)}):</b> <b>${esc(selectedResultStudent)}</b> son oturumda <b>%${latestSummary.pct}</b> (${latestSummary.d}/${latestSummary.n} doğru) ile <b>%${yuzde}</b> başarı ölçütünü aştı! (Ardışık ölçüt takibi: ${phaseSessions.length}/${oturum} oturum)</span>
+         <button type="button" class="btn small" style="background:#F59E0B;color:#fff;border-color:#D97706" onclick="showMedalCelebration('${esc(selectedResultStudent)}', ${latestSummary.pct}, ${yuzde}, '${esc(selectedResultStudent)}, ${esc(EVRE[latestSession.evre] || latestSession.evre)} oturumunda %${latestSummary.pct} başarı göstererek Başarı Madalyası kazandı!')">🎉 Başarı Madalyasını Kutla</button>`;
+    } else {
+      critEl.innerHTML = `<span><b>Ölçüt Takibi (${esc(basePhaseTitle(lastPhase))}):</b> Hedef ardışık ${oturum} oturumda en az <b>%${yuzde}</b> başarı (${phaseSessions.length}/${oturum} oturum tamamlandı).</span>`;
     }
   }
 
@@ -3182,13 +3296,16 @@ function renderResults() {
     body.innerHTML = `<div class="empty">${selectedResultStudent ? `${esc(selectedResultStudent)} için henüz tamamlanmış oturum sonucu yok.` : "Henüz sonuç yok."}</div>`;
     return;
   }
-  const { yuzde: targetCritPct } = getStudentCriterion(selectedResultStudent);
+  const { aktif: critAktif, yuzde: targetCritPct } = getStudentCriterion(selectedResultStudent);
+  const seqMap = getSessionSequenceMap();
   body.innerHTML = rows.map(r => {
     const s = summary(r);
     const open = openRow === r.id;
-    const rowEarnedMedal = s.pct >= targetCritPct;
+    const seqLabel = seqMap[r.id] || (r.mod === "yoklama" ? "Yoklama" : "Uygulama");
+    // Yoklamada %80 geçilince öğrenci tebrik edilmez, yalnızca Uygulama oturumlarında madalya rozeti gösterilir
+    const rowEarnedMedal = critAktif && r.mod === "uygulama" && s.pct >= targetCritPct;
     const medalBadge = rowEarnedMedal
-      ? ` <span class="cap medal" onclick="event.stopPropagation(); showMedalCelebration('${esc(r.ogrenci)}', ${s.pct}, ${targetCritPct}, '${esc(r.ogrenci)}, ${esc(EVRE[r.evre] || r.evre)} oturumunda %${s.pct} (${s.d}/${s.n} doğru) başarı göstererek Başarı Madalyası kazandı!')" title="Madalyayı Göster">🏅 Başarı Madalyası</span>`
+      ? ` <span class="cap medal" onclick="event.stopPropagation(); showMedalCelebration('${esc(r.ogrenci)}', ${s.pct}, ${targetCritPct}, '${esc(r.ogrenci)}, ${esc( seqLabel )} (${esc(EVRE[r.evre] || r.evre)}) oturumunda %${s.pct} (${s.d}/${s.n} doğru) başarı göstererek Başarı Madalyası kazandı!')" title="Madalyayı Göster">🏅 Başarı Madalyası</span>`
       : "";
     const errHtml = showErrorAnalysis ? `<div class="err-breakdown">
       <b>Hata Analizi (Toplam ${s.errSum.toplam} Hata):</b>
@@ -3196,19 +3313,25 @@ function renderResults() {
     </div>` : "";
     return `<div class="row res-row ${open ? "open" : ""}" onclick="toggleRow('${esc(r.id)}')">
       <div class="k">
-        <div class="who">${esc(r.ogrenci)} <span class="cap ${r.mod === "yoklama" ? "y" : "u"}">${r.mod === "yoklama" ? "Yoklama" : "Uygulama"}</span>${medalBadge}${s.unscored ? ` <span class="cap warn">${s.unscored} puansız</span>` : ""}${s.gagPct != null ? ` <span class="cap gag">GAG %${s.gagPct}</span>` : ""}</div>
-        <div class="sub">${fmtDate(r.tarih)} · ${esc(EVRE[r.evre] || r.evre)} · Kod ${esc(r.kod)} · Ort. Süre ${s.avg.toFixed(1)} sn · Ort. İlk Tepki ${s.avgLat.toFixed(1)} sn</div>
+        <div class="who">${esc(r.ogrenci)} <span class="cap ${r.mod === "yoklama" ? "y" : "u"}">${esc(seqLabel)}</span>${medalBadge}${s.unscored ? ` <span class="cap warn">${s.unscored} puansız</span>` : ""}${s.gagPct != null ? ` <span class="cap gag">GAG %${s.gagPct}</span>` : ""}</div>
+        <div class="sub">${fmtDate(r.tarih)} · ${esc(EVRE[r.evre] || r.evre)}${r.mod === "uygulama" ? " (Yoklama Oturumu Verisi)" : ""} · Kod ${esc(r.kod)} · Ort. Süre ${s.avg.toFixed(1)} sn · Ort. İlk Tepki ${s.avgLat.toFixed(1)} sn</div>
         ${errHtml}
       </div>
       <div class="score"><b>%${s.pct}</b><div>${s.d}/${s.n} doğru</div></div>
+      <button type="button" class="btn tinted-red small" style="margin-left:6px" onclick="event.stopPropagation(); deleteSessionResult('${esc(r.id)}', this)" title="Bu oturum verisini sil"><svg class="i" style="width:15px;height:15px"><use href="#i-trash"/></svg>Sil</button>
       <span class="chev"><svg class="i"><use href="#i-chev"/></svg></span>
-    </div>` + (open ? detailHTML(r) : "");
+    </div>` + (open ? detailHTML(r, seqLabel) : "");
   }).join("");
 }
 function toggleRow(id) { openRow = openRow === id ? null : id; renderResults(); }
 
-function detailHTML(r) {
-  return `<div class="detail">${r.sorular.map(q => {
+function detailHTML(r, seqLabel) {
+  return `<div class="detail" onclick="event.stopPropagation()">
+    <div style="grid-column:1 / -1;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;padding:4px 4px 8px;border-bottom:.5px solid var(--sep)">
+      <span style="font-size:13px;font-weight:600;color:var(--label2)">${esc(seqLabel || (r.mod === "yoklama" ? "Yoklama" : "Uygulama"))} · ${esc(EVRE[r.evre] || r.evre)} · ${fmtDate(r.tarih)}</span>
+      <button type="button" class="btn tinted-red small" onclick="event.stopPropagation(); deleteSessionResult('${esc(r.id)}', this)"><svg class="i" style="width:15px;height:15px"><use href="#i-trash"/></svg>Bu Oturum Verisini Sil</button>
+    </div>
+    ${r.sorular.map(q => {
     const sc = scoreOf(r, q);
     const gsc = gagScoreOf(r, q);
     const edited = FIX[r.id] && FIX[r.id][q.no] !== undefined && FIX[r.id][q.no] !== q.dogru;
@@ -3251,31 +3374,35 @@ function setFix(id, no, val, observer) {
   post({ islemTipi: "sonuc_duzeltme", sonucId: id, soruNo: no, dogru: val, ogretmenAdi: teacherName, gozlemci: String(observer || 1), tarih: new Date().toISOString() });
   renderResults();
   renderChart();
-  if (observer !== 2 && targetRow && val === true) {
+  if (observer !== 2 && targetRow && targetRow.mod === "uygulama" && val === true) {
     const newSummary = summary(targetRow);
-    const { yuzde } = getStudentCriterion(targetRow.ogrenci);
-    if (oldPct < yuzde && newSummary.pct >= yuzde) {
+    const { aktif, yuzde } = getStudentCriterion(targetRow.ogrenci);
+    if (aktif && oldPct < yuzde && newSummary.pct >= yuzde) {
       showMedalCelebration(targetRow.ogrenci, newSummary.pct, yuzde, `${targetRow.ogrenci}, ${EVRE[targetRow.evre] || targetRow.evre} oturumunda %${newSummary.pct} (${newSummary.d}/${newSummary.n} doğru) başarıya ulaşarak Başarı Madalyası kazandı!`);
     }
   }
 }
 
 function exportCSV() {
-  const head = ["Tarih", "Öğretmen", "Öğrenci", "Kod", "Tür", "Evre", "Soru No", "İşlem", "Beklenen", "Okunan", "Doğru (1.Gözlemci)", "2.Gözlemci (GAG)", "Deneme", "Toplam Hata", "Sıralama Hatası", "Sürükleme Hatası", "Sembol Hatası", "Süre Hatası", "İlk Tepki Süresi (sn)", "Çözüm Süresi (sn)", "İpucu Sayısı"];
+  const head = ["Tarih", "Öğretmen", "Öğrenci", "Kod", "Oturum Sırası", "Tür", "Evre", "Soru No", "İşlem", "Beklenen", "Okunan", "Doğru (1.Gözlemci)", "2.Gözlemci (GAG)", "Deneme", "Toplam Hata", "Sıralama Hatası", "Sürükleme Hatası", "Sembol Hatası", "Süre Hatası", "İlk Tepki Süresi (sn)", "Çözüm Süresi (sn)", "İpucu Sayısı"];
   const lines = [head];
-  filtered().forEach(r => r.sorular.forEach(q => {
-    const sc = scoreOf(r, q), gsc = gagScoreOf(r, q);
-    const ed = q.hataDetay || {};
-    const lat = q.ilkTepki != null ? q.ilkTepki : q.sure;
-    lines.push([
-      fmtDate(r.tarih), r.ogretmen, r.ogrenci, r.kod, r.mod, EVRE[r.evre] || r.evre, q.no, `${q.num1}${q.op}${q.num2}`, q.beklenen,
-      (q.okunanlar && q.okunanlar.length ? q.okunanlar.join("/") : q.okunan) || "",
-      sc === true ? 1 : sc === false ? 0 : "",
-      gsc === true ? 1 : gsc === false ? 0 : "",
-      q.deneme, q.hata, ed.siralama || 0, ed.surukleme || 0, ed.sembol || 0, ed.sure || 0,
-      String(lat).replace(".", ","), String(q.sure).replace(".", ","), q.ipucuSayisi || 0
-    ]);
-  }));
+  const seqMap = getSessionSequenceMap();
+  filtered().forEach(r => {
+    const seqLabel = seqMap[r.id] || (r.mod === "yoklama" ? "Yoklama" : "Uygulama");
+    r.sorular.forEach(q => {
+      const sc = scoreOf(r, q), gsc = gagScoreOf(r, q);
+      const ed = q.hataDetay || {};
+      const lat = q.ilkTepki != null ? q.ilkTepki : q.sure;
+      lines.push([
+        fmtDate(r.tarih), r.ogretmen, r.ogrenci, r.kod, seqLabel, r.mod, EVRE[r.evre] || r.evre, q.no, `${q.num1}${q.op}${q.num2}`, q.beklenen,
+        (q.okunanlar && q.okunanlar.length ? q.okunanlar.join("/") : q.okunan) || "",
+        sc === true ? 1 : sc === false ? 0 : "",
+        gsc === true ? 1 : gsc === false ? 0 : "",
+        q.deneme, q.hata, ed.siralama || 0, ed.surukleme || 0, ed.sembol || 0, ed.sure || 0,
+        String(lat).replace(".", ","), String(q.sure).replace(".", ","), q.ipucuSayisi || 0
+      ]);
+    });
+  });
   const csv = "\uFEFF" + lines.map(l => l.map(v => `"${String(v).replace(/"/g, '""')}"`).join(";")).join("\r\n");
   download(new Blob([csv], { type: "text/csv;charset=utf-8" }), `sayi-izi-sonuclar-${selectedResultStudent || "tum"}-${new Date().toISOString().slice(0, 10)}.csv`);
 }
@@ -3299,12 +3426,13 @@ function renderChart() {
   const data = RESULTS.filter(r => r.ogrenci === name && (!ty || r.mod === ty));
   const C = { text: cssVar("--text"), muted: cssVar("--muted"), faint: cssVar("--faint"), line: cssVar("--line"), surface: cssVar("--surface"), blue: cssVar("--blue"), green: cssVar("--green"), orange: cssVar("--orange") };
 
-  const { yuzde: critPct } = getStudentCriterion(name);
+  const { aktif: critAktif, yuzde: critPct } = getStudentCriterion(name);
+  const seqMap = getSessionSequenceMap();
   const types = Array.from(new Set(data.map(r => r.mod)));
   $("#gLegend").innerHTML = types.map(t => t === "yoklama"
     ? `<span><svg width="14" height="14"><circle cx="7" cy="7" r="5.5" fill="${C.blue}"/></svg>Yoklama</span>`
     : `<span><svg width="14" height="14"><rect x="2" y="2" width="10" height="10" rx="1.5" fill="${C.surface}" stroke="${C.blue}" stroke-width="2"/></svg>Uygulama</span>`).join("") +
-    `<span><svg width="18" height="10"><line x1="0" x2="18" y1="5" y2="5" stroke="${C.green}" stroke-width="2" stroke-dasharray="4 3"/></svg>Hedef Ölçüt (%${critPct})</span>`;
+    (critAktif ? `<span><svg width="18" height="10"><line x1="0" x2="18" y1="5" y2="5" stroke="${C.green}" stroke-width="2" stroke-dasharray="4 3"/></svg>Hedef Ölçüt (%${critPct})</span>` : "");
 
   if (!name || !data.length) {
     box.innerHTML = `<div class="empty">${name ? "Bu öğrenci için grafik çizilecek oturum verisi yok." : "Henüz sonuç yok."}</div>`;
@@ -3325,7 +3453,9 @@ function renderChart() {
     g += `<line x1="${L}" x2="${W - R}" y1="${Y(v)}" y2="${Y(v)}" stroke="${C.line}" stroke-width="1"/>`;
     g += `<text x="${L - 10}" y="${Y(v) + 4}" text-anchor="end" font-size="12" fill="${C.muted}">${v}</text>`;
   });
-  g += `<line x1="${L}" x2="${W - R}" y1="${Y(critPct)}" y2="${Y(critPct)}" stroke="${C.green}" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  if (critAktif) {
+    g += `<line x1="${L}" x2="${W - R}" y1="${Y(critPct)}" y2="${Y(critPct)}" stroke="${C.green}" stroke-width="1.5" stroke-dasharray="5 4"/>`;
+  }
   g += `<text transform="translate(16 ${T + ih / 2}) rotate(-90)" text-anchor="middle" font-size="12" font-weight="600" fill="${C.muted}">Doğru yüzdesi (%)</text>`;
   const every = Math.ceil(n / 20);
   pts.forEach(p => { if (p.i % every === 0 || p.i === n - 1) g += `<text x="${p.x}" y="${T + ih + 20}" text-anchor="middle" font-size="12" fill="${C.muted}">${p.i + 1}</text>`; });
@@ -3356,8 +3486,9 @@ function renderChart() {
   box.querySelectorAll(".hit").forEach(c => {
     const show = () => {
       const p = pts[+c.dataset.i];
+      const seqLabel = seqMap[p.r.id] || (p.r.mod === "yoklama" ? "Yoklama" : "Uygulama");
       const sv = $("#chartSvg").getBoundingClientRect(), bx = box.getBoundingClientRect();
-      tip.innerHTML = `<b>%${p.pct}</b> · ${p.d}/${p.n} doğru<br>Oturum ${p.i + 1} · ${p.r.mod === "yoklama" ? "Yoklama" : "Uygulama"} · ${esc(EVRE[p.r.evre] || p.r.evre)}<br>Ort. İlk Tepki: ${p.avgLat.toFixed(1)} sn · Ort. Süre: ${p.avg.toFixed(1)} sn`;
+      tip.innerHTML = `<b>%${p.pct}</b> · ${p.d}/${p.n} doğru<br>${esc(seqLabel)} · ${esc(EVRE[p.r.evre] || p.r.evre)}<br>Ort. İlk Tepki: ${p.avgLat.toFixed(1)} sn · Ort. Süre: ${p.avg.toFixed(1)} sn`;
       tip.style.left = (sv.left - bx.left + p.x / W * sv.width) + "px";
       tip.style.top = (sv.top - bx.top + p.y / H * sv.height) + "px";
       tip.style.opacity = 1;
@@ -3412,9 +3543,6 @@ renderPhaseSeg();
 setPhase("A");
 calcAnswer();
 renderQuestions();
-if (location.hash === "#sayi-izi") {
-  showScreen("#login");
-}
 </script>
 </body>
 </html>
